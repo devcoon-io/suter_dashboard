@@ -1,7 +1,6 @@
 {
   "tests": [
     "create_offer_warmair_div.json",
-    "create_offer_warmair_e4r.json",
     "create_offer_warmair_hag.json",
     "create_offer_warmair_hku.json",
     "create_offer_warmair_set.json",
@@ -9,7 +8,6 @@
     "create_offer_warmair_sur.json",
 
     "create_offer_dehum_div.json",
-    "create_offer_dehum_e4r.json",
     "create_offer_dehum_hag.json",
     "create_offer_dehum_hku.json",
     "create_offer_dehum_set.json",
@@ -17,7 +15,6 @@
     "create_offer_dehum_sur.json",
 
     "create_offer_hotwat_div.json",
-    "create_offer_hotwat_e4r.json",
     "create_offer_hotwat_hag.json",
     "create_offer_hotwat_hku.json",
     "create_offer_hotwat_set.json",
@@ -25,7 +22,6 @@
     "create_offer_hotwat_sur.json",
 
     "create_offer_sales_div.json",
-    "create_offer_sales_e4r.json",
     "create_offer_sales_hag.json",
     "create_offer_sales_hku.json",
     "create_offer_sales_set.json",

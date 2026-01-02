@@ -1,40 +1,125 @@
 {
-  "generated_at": "2026-01-02T19:48:54.182Z",
+  "generated_at": "2026-01-02T22:46:12.195Z",
   "folders": [
     {
-      "name": "create_offer_div",
-      "json_file": "create_offer_div.json",
-      "video_file": "767abe3b629fe42d98840ab6ba41fb5a.webm"
+      "name": "create_offer_dehum_div",
+      "json_file": "create_offer_dehum_div.json",
+      "video_file": "0916e689481790c45137da3c3d0734a9.webm"
     },
     {
-      "name": "create_offer_e4r",
-      "json_file": "create_offer_e4r.json",
-      "video_file": "400b4a17ec9f7e9e4a49921ccb7b33d3.webm"
+      "name": "create_offer_dehum_hag",
+      "json_file": "create_offer_dehum_hag.json",
+      "video_file": "8bf2f23f9205013300cea707c2677bfc.webm"
     },
     {
-      "name": "create_offer_hag",
-      "json_file": "create_offer_hag.json",
-      "video_file": "fb1c74a570b6a4cd5d48fffc686aedfd.webm"
+      "name": "create_offer_dehum_hku",
+      "json_file": "create_offer_dehum_hku.json",
+      "video_file": "352beb8326c3172c14813e43415656ce.webm"
     },
     {
-      "name": "create_offer_hku",
-      "json_file": "create_offer_hku.json",
-      "video_file": "05b3be0d4f5f6e4fce9f3f24b49c2f1a.webm"
+      "name": "create_offer_dehum_set",
+      "json_file": "create_offer_dehum_set.json",
+      "video_file": "dff856609294fa23e709366b1e90baea.webm"
     },
     {
-      "name": "create_offer_set",
-      "json_file": "create_offer_set.json",
-      "video_file": "ce6b47ceb745f8164a61c1cad674d5bf.webm"
+      "name": "create_offer_dehum_sud",
+      "json_file": "create_offer_dehum_sud.json",
+      "video_file": "84e658601d5451d929252b41e67ad7ed.webm"
     },
     {
-      "name": "create_offer_sud",
-      "json_file": "create_offer_sud.json",
-      "video_file": "9fd9232204da61e55dbf20707cec7ccb.webm"
+      "name": "create_offer_dehum_sur",
+      "json_file": "create_offer_dehum_sur.json",
+      "video_file": "b8c9e31ff6cd04a84f2b016b5892c4ea.webm"
     },
     {
-      "name": "create_offer_sur",
-      "json_file": "create_offer_sur.json",
-      "video_file": "8e7aaa3f1228eeb418407f193b9ceb69.webm"
+      "name": "create_offer_hotwat_div",
+      "json_file": "create_offer_hotwat_div.json",
+      "video_file": "837d3b5d9098a9d2ce1db6ea0cd18f36.webm"
+    },
+    {
+      "name": "create_offer_hotwat_hag",
+      "json_file": "create_offer_hotwat_hag.json",
+      "video_file": "b68b7c6716bd31c15d0a7d05d0b9ba2c.webm"
+    },
+    {
+      "name": "create_offer_hotwat_hku",
+      "json_file": "create_offer_hotwat_hku.json",
+      "video_file": "2f9a14489a4d50770ae29f7398c1089e.webm"
+    },
+    {
+      "name": "create_offer_hotwat_set",
+      "json_file": "create_offer_hotwat_set.json",
+      "video_file": "4ec2fd9bcb31ea8323d0623dcc98a4d0.webm"
+    },
+    {
+      "name": "create_offer_hotwat_sud",
+      "json_file": "create_offer_hotwat_sud.json",
+      "video_file": "fad45632065157a4ee3eb1e21f488adf.webm"
+    },
+    {
+      "name": "create_offer_hotwat_sur",
+      "json_file": "create_offer_hotwat_sur.json",
+      "video_file": "784b7ffbd9028d2004d9a5002ba16928.webm"
+    },
+    {
+      "name": "create_offer_sales_div",
+      "json_file": "create_offer_sales_div.json",
+      "video_file": "9a024e72ccefcb0209ee17aaef5da491.webm"
+    },
+    {
+      "name": "create_offer_sales_hag",
+      "json_file": "create_offer_sales_hag.json",
+      "video_file": "2a9e437b3bbe044b3589f64837f37b42.webm"
+    },
+    {
+      "name": "create_offer_sales_hku",
+      "json_file": "create_offer_sales_hku.json",
+      "video_file": "686f1b04c281f79ac1d69d8892b4ddf3.webm"
+    },
+    {
+      "name": "create_offer_sales_set",
+      "json_file": "create_offer_sales_set.json",
+      "video_file": "051411dcaa069bd5295a4000396f64ef.webm"
+    },
+    {
+      "name": "create_offer_sales_sud",
+      "json_file": "create_offer_sales_sud.json",
+      "video_file": "85b4e11fd6028b33f1b2be913ba4869c.webm"
+    },
+    {
+      "name": "create_offer_sales_sur",
+      "json_file": "create_offer_sales_sur.json",
+      "video_file": "7c1f197938a0956ded74964d0c229be6.webm"
+    },
+    {
+      "name": "create_offer_warmair_div",
+      "json_file": "create_offer_warmair_div.json",
+      "video_file": "912416f3c7282c9a0d844d114e4718fa.webm"
+    },
+    {
+      "name": "create_offer_warmair_hag",
+      "json_file": "create_offer_warmair_hag.json",
+      "video_file": "87e5e15c0a479445000216e6158fbc85.webm"
+    },
+    {
+      "name": "create_offer_warmair_hku",
+      "json_file": "create_offer_warmair_hku.json",
+      "video_file": "d4e26bae86f2a6ad6781fc390072a7b0.webm"
+    },
+    {
+      "name": "create_offer_warmair_set",
+      "json_file": "create_offer_warmair_set.json",
+      "video_file": "7a31ef921295a168350cc641b5000e64.webm"
+    },
+    {
+      "name": "create_offer_warmair_sud",
+      "json_file": "create_offer_warmair_sud.json",
+      "video_file": "d0298b2f1428980d75682542fe632eac.webm"
+    },
+    {
+      "name": "create_offer_warmair_sur",
+      "json_file": "create_offer_warmair_sur.json",
+      "video_file": "98848a15a91c2fcbd02a0843754b55c7.webm"
     },
     {
       "name": "project_lifecycle_e4r",
@@ -59,7 +144,7 @@
     {
       "name": "project_lifecycle_sur",
       "json_file": "project_lifecycle_sur.json",
-      "video_file": "d6582183bf1e122c28ac82a37804e069.webm"
+      "video_file": "c2c70d67ffa1d08dc3a92fc4e6d51d95.webm"
     }
   ]
 }
