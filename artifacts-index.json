@@ -1,65 +1,65 @@
 {
-  "generated_at": "2026-01-02T19:04:00.979Z",
+  "generated_at": "2026-01-02T19:48:54.182Z",
   "folders": [
     {
       "name": "create_offer_div",
       "json_file": "create_offer_div.json",
-      "video_file": null
+      "video_file": "767abe3b629fe42d98840ab6ba41fb5a.webm"
     },
     {
       "name": "create_offer_e4r",
       "json_file": "create_offer_e4r.json",
-      "video_file": null
+      "video_file": "400b4a17ec9f7e9e4a49921ccb7b33d3.webm"
     },
     {
       "name": "create_offer_hag",
       "json_file": "create_offer_hag.json",
-      "video_file": null
+      "video_file": "fb1c74a570b6a4cd5d48fffc686aedfd.webm"
     },
     {
       "name": "create_offer_hku",
       "json_file": "create_offer_hku.json",
-      "video_file": null
+      "video_file": "05b3be0d4f5f6e4fce9f3f24b49c2f1a.webm"
     },
     {
       "name": "create_offer_set",
       "json_file": "create_offer_set.json",
-      "video_file": null
+      "video_file": "ce6b47ceb745f8164a61c1cad674d5bf.webm"
     },
     {
       "name": "create_offer_sud",
       "json_file": "create_offer_sud.json",
-      "video_file": null
+      "video_file": "9fd9232204da61e55dbf20707cec7ccb.webm"
     },
     {
       "name": "create_offer_sur",
       "json_file": "create_offer_sur.json",
-      "video_file": null
+      "video_file": "8e7aaa3f1228eeb418407f193b9ceb69.webm"
     },
     {
       "name": "project_lifecycle_e4r",
       "json_file": "project_lifecycle_e4r.json",
-      "video_file": null
+      "video_file": "114984218f73a0d01a08f4ac7b522e74.webm"
     },
     {
       "name": "project_lifecycle_hag",
       "json_file": "project_lifecycle_hag.json",
-      "video_file": null
+      "video_file": "4fa12456c4520652b081af09328ec921.webm"
     },
     {
       "name": "project_lifecycle_set",
       "json_file": "project_lifecycle_set.json",
-      "video_file": null
+      "video_file": "8b1d6c1d4b3006f07559a157721e0e79.webm"
     },
     {
       "name": "project_lifecycle_sud",
       "json_file": "project_lifecycle_sud.json",
-      "video_file": null
+      "video_file": "81a1972e8ebbd6940109c4dd1f68177f.webm"
     },
     {
       "name": "project_lifecycle_sur",
       "json_file": "project_lifecycle_sur.json",
-      "video_file": null
+      "video_file": "d6582183bf1e122c28ac82a37804e069.webm"
     }
   ]
 }
