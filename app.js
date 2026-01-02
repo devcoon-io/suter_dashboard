@@ -337,9 +337,9 @@ function renderTests(tests){
       </div>
 
       <div class="steps">
-        <div class="video-player" data-video-src="${videoSrc || ''}">
-          ${videoSrc ? `<video controls controlsList="nodownload" preload="metadata"></video>` : `<div class="video-unavailable">NO VIDEO AVAILABLE</div>`}
-        </div>
+        ${videoSrc ? `<div class="video-player" data-video-src="${videoSrc}">
+          <video controls controlsList="nodownload" preload="metadata"></video>
+        </div>` : ''}
         ${steps.map(s => {
           const st = normalizeStatus(s.status);
           const screenshotSrc = resolveArtifact(base, s.screenshot);
@@ -348,9 +348,15 @@ function renderTests(tests){
             ? `<a class="link" href="${screenshotSrc}" target="_blank">Open screenshot</a>`
             : `<span class="meta">Not tested</span>`;
 
+          const stepIcon = st === 'pass' 
+            ? `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`
+            : st === 'fail'
+            ? `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`
+            : `<span>-</span>`;
+
           return `
             <div class="step-row">
-              <div class="badge ${st}">${st.replace("_"," ").toUpperCase()}</div>
+              <div class="step-badge ${st}">${stepIcon}</div>
               <div class="step-name">${escapeHtml(s.step)}</div>
               <div>${ssLink}</div>
             </div>

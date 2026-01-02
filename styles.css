@@ -334,8 +334,8 @@ html, body {
 
 .step-row {
   display: grid;
-  grid-template-columns: 100px 1fr 140px;
-  gap: 16px;
+  grid-template-columns: 36px 1fr 140px;
+  gap: 12px;
   align-items: center;
   padding: 8px;
   border-radius: var(--radius);
@@ -343,6 +343,30 @@ html, body {
 
 .step-row:hover {
   background: var(--bg);
+}
+
+.step-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+.step-badge.pass {
+  background: rgba(40, 167, 69, 0.15);
+  color: var(--pass);
+}
+
+.step-badge.fail {
+  background: rgba(220, 53, 69, 0.15);
+  color: var(--fail);
+}
+
+.step-badge.not_tested {
+  background: rgba(108, 117, 125, 0.15);
+  color: var(--not-tested);
 }
 
 .step-name {
