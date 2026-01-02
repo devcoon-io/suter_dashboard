@@ -1,0 +1,84 @@
+{
+  "test_name": "Create Proposal Cycle - Warm Air (E4R)",
+  "started_at": "2026-01-02 23:45:05 UTC",
+  "duration": "00 hr 00 min 40 sec",
+  "video_file": "14bde3de924d0781d5a9e1d3ec1af69d.webm",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected E4R from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/05-selected-e4r-from-dropdown.png"
+    },
+    {
+      "step": "Clicked Projects menu",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/06-clicked-projects-menu.png"
+    },
+    {
+      "step": "Clicked Proposal tab",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/07-clicked-proposal-tab.png"
+    },
+    {
+      "step": "Selected Warm Air from application dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/08-selected-warm-air-from-application-dropdown.png"
+    },
+    {
+      "step": "Filled project form fields",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/09-filled-project-form-fields.png"
+    },
+    {
+      "step": "Clicked Next button (step 1)",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/10-clicked-next-button-step-1.png"
+    },
+    {
+      "step": "Scrolled and clicked Next button (step 2)",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/11-scrolled-and-clicked-next-button-step-2.png"
+    },
+    {
+      "step": "Selected customer from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/12-selected-customer-from-dropdown.png"
+    },
+    {
+      "step": "Clicked Create button",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/13-clicked-create-button.png"
+    },
+    {
+      "step": "Offer number appeared",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/14-offer-number-appeared.png"
+    },
+    {
+      "step": "Final screenshot captured",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_warmair_e4r/screenshots/15-final-screenshot-captured.png"
+    }
+  ]
+}

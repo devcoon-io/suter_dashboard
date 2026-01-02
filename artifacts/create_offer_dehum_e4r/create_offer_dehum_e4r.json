@@ -1,0 +1,79 @@
+{
+  "test_name": "Create Proposal Cycle - Dehumidification (E4R)",
+  "started_at": "2026-01-02 23:45:46 UTC",
+  "duration": "00 hr 02 min 24 sec",
+  "overall_status": "fail",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected E4R from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/05-selected-e4r-from-dropdown.png"
+    },
+    {
+      "step": "Clicked Projects menu",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/06-clicked-projects-menu.png"
+    },
+    {
+      "step": "Clicked Proposal tab",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/07-clicked-proposal-tab.png"
+    },
+    {
+      "step": "Selected Dehumidification from application dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/08-selected-dehumidification-from-application-dropdown.png"
+    },
+    {
+      "step": "Filled project form fields",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/09-filled-project-form-fields.png"
+    },
+    {
+      "step": "Clicked Next button (step 1)",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/10-clicked-next-button-step-1.png"
+    },
+    {
+      "step": "Scrolled and clicked Next button (step 2)",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/11-scrolled-and-clicked-next-button-step-2.png"
+    },
+    {
+      "step": "Selected customer from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/12-selected-customer-from-dropdown.png"
+    },
+    {
+      "step": "Clicked Create button",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/13-clicked-create-button.png"
+    },
+    {
+      "step": "Offer number appeared",
+      "status": "fail",
+      "details": "Locator.wait_for: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"h3:has-text(\\\"Offer Nr.:\\\")\").first to be visible\n",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/14-offer-number-appeared.png"
+    }
+  ]
+}
