@@ -129,7 +129,8 @@ let deploymentTimestamp = null;
 
 async function discoverArtifactFolders(){
   try{
-    const index = await fetchJson('./artifacts-index.json');
+    const cacheBuster = Date.now();
+    const index = await fetchJson(`./artifacts-index.json?v=${cacheBuster}`);
     if (index.generated_at){
       deploymentTimestamp = new Date(index.generated_at);
     }
