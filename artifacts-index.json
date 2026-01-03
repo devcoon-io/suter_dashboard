@@ -1,10 +1,15 @@
 {
-  "generated_at": "2026-01-02T22:46:12.195Z",
+  "generated_at": "2026-01-03T00:01:17.870Z",
   "folders": [
     {
       "name": "create_offer_dehum_div",
       "json_file": "create_offer_dehum_div.json",
       "video_file": "0916e689481790c45137da3c3d0734a9.webm"
+    },
+    {
+      "name": "create_offer_dehum_e4r",
+      "json_file": "create_offer_dehum_e4r.json",
+      "video_file": "e46eacfda5b70a0b3e3ac05fd8a25445.webm"
     },
     {
       "name": "create_offer_dehum_hag",
@@ -37,6 +42,11 @@
       "video_file": "837d3b5d9098a9d2ce1db6ea0cd18f36.webm"
     },
     {
+      "name": "create_offer_hotwat_e4r",
+      "json_file": "create_offer_hotwat_e4r.json",
+      "video_file": "6066511542b0722a500cc5e12f802099.webm"
+    },
+    {
       "name": "create_offer_hotwat_hag",
       "json_file": "create_offer_hotwat_hag.json",
       "video_file": "b68b7c6716bd31c15d0a7d05d0b9ba2c.webm"
@@ -67,6 +77,11 @@
       "video_file": "9a024e72ccefcb0209ee17aaef5da491.webm"
     },
     {
+      "name": "create_offer_sales_e4r",
+      "json_file": "create_offer_sales_e4r.json",
+      "video_file": "52a5f457c22b93c236ab0caf643d2a2e.webm"
+    },
+    {
       "name": "create_offer_sales_hag",
       "json_file": "create_offer_sales_hag.json",
       "video_file": "2a9e437b3bbe044b3589f64837f37b42.webm"
@@ -95,6 +110,11 @@
       "name": "create_offer_warmair_div",
       "json_file": "create_offer_warmair_div.json",
       "video_file": "912416f3c7282c9a0d844d114e4718fa.webm"
+    },
+    {
+      "name": "create_offer_warmair_e4r",
+      "json_file": "create_offer_warmair_e4r.json",
+      "video_file": "14bde3de924d0781d5a9e1d3ec1af69d.webm"
     },
     {
       "name": "create_offer_warmair_hag",
