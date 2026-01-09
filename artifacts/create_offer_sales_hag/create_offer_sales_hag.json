@@ -1,8 +1,9 @@
 {
   "test_name": "Create Proposal Cycle - Sales (HAG)",
-  "started_at": "2026-01-02 21:55:15 UTC",
-  "duration": "00 hr 00 min 36 sec",
-  "video_file": "2a9e437b3bbe044b3589f64837f37b42.webm",
+  "test_description": "Creates a new offer request by filling out the multi-step form.",
+  "test_group": "Create Project (Sales)",
+  "started_at": "2026-01-09 11:05:00 UTC",
+  "duration": "00 hr 00 min 48 sec",
   "overall_status": "pass",
   "steps": [
     {

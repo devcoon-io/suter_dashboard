@@ -1,0 +1,65 @@
+{
+  "test_name": "Language Change Test - English (EN)",
+  "test_description": "Verifies that a user can successfully change the language to English.",
+  "test_group": "Dashboard Functionality",
+  "started_at": "2026-01-09 11:36:47 UTC",
+  "duration": "00 hr 00 min 32 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/language_english/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/language_english/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/language_english/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/language_english/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected SET from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/language_english/screenshots/05-selected-set-from-dropdown.png"
+    },
+    {
+      "step": "Clicked account_circle icon",
+      "status": "pass",
+      "screenshot": "artifacts/language_english/screenshots/06-clicked-account-circle-icon.png"
+    },
+    {
+      "step": "Clicked language dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/language_english/screenshots/07-clicked-language-dropdown.png"
+    },
+    {
+      "step": "Selected EN (English) language",
+      "status": "pass",
+      "screenshot": "artifacts/language_english/screenshots/08-selected-en-english-language.png"
+    },
+    {
+      "step": "Clicked Update button",
+      "status": "pass",
+      "screenshot": "artifacts/language_english/screenshots/09-clicked-update-button.png"
+    },
+    {
+      "step": "Verify English menu items - Found: ['Market Place', 'Dashboard', 'Projects', 'Customers', 'Equipment', 'Statistics', 'Admin', 'Remote Maintenance', 'Log out']",
+      "status": "pass",
+      "screenshot": "artifacts/language_english/screenshots/10-verify-english-menu-items-found-market-place-dashboard-projects-customers-equipment-statistics-admin-remote-maintenance-log-out.png"
+    },
+    {
+      "step": "Final screenshot captured - English language test complete",
+      "status": "pass",
+      "screenshot": "artifacts/language_english/screenshots/11-final-screenshot-captured-english-language-test-complete.png"
+    }
+  ]
+}

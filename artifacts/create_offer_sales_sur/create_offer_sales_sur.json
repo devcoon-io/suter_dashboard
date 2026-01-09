@@ -1,8 +1,9 @@
 {
   "test_name": "Create Proposal Cycle - Sales (SUR)",
-  "started_at": "2026-01-02 22:10:40 UTC",
-  "duration": "00 hr 00 min 35 sec",
-  "video_file": "7c1f197938a0956ded74964d0c229be6.webm",
+  "test_description": "Creates a new offer request by filling out the multi-step form.",
+  "test_group": "Create Project (Sales)",
+  "started_at": "2026-01-09 11:22:37 UTC",
+  "duration": "00 hr 00 min 54 sec",
   "overall_status": "pass",
   "steps": [
     {

@@ -1,0 +1,55 @@
+{
+  "test_name": "Logout Test",
+  "test_description": "Verifies that a user can successfully log out of the application.",
+  "test_group": "Dashboard Functionality",
+  "started_at": "2026-01-09 11:36:21 UTC",
+  "duration": "00 hr 00 min 19 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/logout/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/logout/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/logout/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/logout/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Page fully loaded after login",
+      "status": "pass",
+      "screenshot": "artifacts/logout/screenshots/05-page-fully-loaded-after-login.png"
+    },
+    {
+      "step": "Clicked logout button",
+      "status": "pass",
+      "screenshot": "artifacts/logout/screenshots/06-clicked-logout-button.png"
+    },
+    {
+      "step": "Redirected to login page",
+      "status": "pass",
+      "screenshot": "artifacts/logout/screenshots/07-redirected-to-login-page.png"
+    },
+    {
+      "step": "Login form elements present after logout",
+      "status": "pass",
+      "screenshot": "artifacts/logout/screenshots/08-login-form-elements-present-after-logout.png"
+    },
+    {
+      "step": "Final screenshot captured - Logout test complete",
+      "status": "pass",
+      "screenshot": "artifacts/logout/screenshots/09-final-screenshot-captured-logout-test-complete.png"
+    }
+  ]
+}

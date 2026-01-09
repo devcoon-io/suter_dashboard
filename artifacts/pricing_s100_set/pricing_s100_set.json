@@ -1,0 +1,360 @@
+{
+  "test_name": "Pricing Test - S 100 (SET)",
+  "test_description": "Creates a project in SET with Sales application and Test template, then adds S 100 items with 4 different price classes to verify pricing at different rental period boundaries.",
+  "test_group": "Pricelist Validation",
+  "started_at": "2026-01-09 11:45:19 UTC",
+  "duration": "00 hr 05 min 51 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected SET from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/05-selected-set-from-dropdown.png"
+    },
+    {
+      "step": "Clicked Projects menu",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/06-clicked-projects-menu.png"
+    },
+    {
+      "step": "Clicked Proposal tab",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/07-clicked-proposal-tab.png"
+    },
+    {
+      "step": "Selected Sales from application dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/08-selected-sales-from-application-dropdown.png"
+    },
+    {
+      "step": "Selected Test from template dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/09-selected-test-from-template-dropdown.png"
+    },
+    {
+      "step": "Filled project form fields",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/10-filled-project-form-fields.png"
+    },
+    {
+      "step": "Clicked Next button (step 1)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/11-clicked-next-button-step-1.png"
+    },
+    {
+      "step": "Clicked add_circle for S 100 - Summer",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/12-clicked-add-circle-for-s-100-summer.png"
+    },
+    {
+      "step": "Selected Category: Warm air heaters",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/13-selected-category-warm-air-heaters.png"
+    },
+    {
+      "step": "Selected Group: S 100",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/14-selected-group-s-100.png"
+    },
+    {
+      "step": "Selected Price Class: S 100 - Summer",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/15-selected-price-class-s-100-summer.png"
+    },
+    {
+      "step": "Clicked Ok to add S 100 - Summer",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/16-clicked-ok-to-add-s-100-summer.png"
+    },
+    {
+      "step": "S 100 - Summer: 1 days = 44.0 CHF (expected 44.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/17-s-100-summer-1-days-44-0-chf-expected-44-0.png"
+    },
+    {
+      "step": "S 100 - Summer: 10 days = 44.0 CHF (expected 44.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/18-s-100-summer-10-days-44-0-chf-expected-44-0.png"
+    },
+    {
+      "step": "S 100 - Summer: 11 days = 44.0 CHF (expected 44.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/19-s-100-summer-11-days-44-0-chf-expected-44-0.png"
+    },
+    {
+      "step": "S 100 - Summer: 30 days = 44.0 CHF (expected 44.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/20-s-100-summer-30-days-44-0-chf-expected-44-0.png"
+    },
+    {
+      "step": "S 100 - Summer: 31 days = 42.0 CHF (expected 42.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/21-s-100-summer-31-days-42-0-chf-expected-42-0.png"
+    },
+    {
+      "step": "S 100 - Summer: 90 days = 42.0 CHF (expected 42.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/22-s-100-summer-90-days-42-0-chf-expected-42-0.png"
+    },
+    {
+      "step": "S 100 - Summer: 91 days = 40.0 CHF (expected 40.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/23-s-100-summer-91-days-40-0-chf-expected-40-0.png"
+    },
+    {
+      "step": "S 100 - Summer: 180 days = 40.0 CHF (expected 40.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/24-s-100-summer-180-days-40-0-chf-expected-40-0.png"
+    },
+    {
+      "step": "Clicked add_circle for S 100 - Winter",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/25-clicked-add-circle-for-s-100-winter.png"
+    },
+    {
+      "step": "Selected Category: Warm air heaters",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/26-selected-category-warm-air-heaters.png"
+    },
+    {
+      "step": "Selected Group: S 100",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/27-selected-group-s-100.png"
+    },
+    {
+      "step": "Selected Price Class: S 100 - Winter",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/28-selected-price-class-s-100-winter.png"
+    },
+    {
+      "step": "Clicked Ok to add S 100 - Winter",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/29-clicked-ok-to-add-s-100-winter.png"
+    },
+    {
+      "step": "S 100 - Winter: 1 days = 55.0 CHF (expected 55.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/30-s-100-winter-1-days-55-0-chf-expected-55-0.png"
+    },
+    {
+      "step": "S 100 - Winter: 10 days = 55.0 CHF (expected 55.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/31-s-100-winter-10-days-55-0-chf-expected-55-0.png"
+    },
+    {
+      "step": "S 100 - Winter: 11 days = 50.0 CHF (expected 50.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/32-s-100-winter-11-days-50-0-chf-expected-50-0.png"
+    },
+    {
+      "step": "S 100 - Winter: 30 days = 50.0 CHF (expected 50.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/33-s-100-winter-30-days-50-0-chf-expected-50-0.png"
+    },
+    {
+      "step": "S 100 - Winter: 31 days = 48.0 CHF (expected 48.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/34-s-100-winter-31-days-48-0-chf-expected-48-0.png"
+    },
+    {
+      "step": "S 100 - Winter: 90 days = 48.0 CHF (expected 48.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/35-s-100-winter-90-days-48-0-chf-expected-48-0.png"
+    },
+    {
+      "step": "S 100 - Winter: 91 days = 46.0 CHF (expected 46.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/36-s-100-winter-91-days-46-0-chf-expected-46-0.png"
+    },
+    {
+      "step": "S 100 - Winter: 180 days = 46.0 CHF (expected 46.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/37-s-100-winter-180-days-46-0-chf-expected-46-0.png"
+    },
+    {
+      "step": "S 100 - Winter: 181 days = 40.0 CHF (expected 40.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/38-s-100-winter-181-days-40-0-chf-expected-40-0.png"
+    },
+    {
+      "step": "S 100 - Winter: 360 days = 40.0 CHF (expected 40.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/39-s-100-winter-360-days-40-0-chf-expected-40-0.png"
+    },
+    {
+      "step": "S 100 - Winter: 361 days = 38.0 CHF (expected 38.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/40-s-100-winter-361-days-38-0-chf-expected-38-0.png"
+    },
+    {
+      "step": "S 100 - Winter: 365 days = 38.0 CHF (expected 38.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/41-s-100-winter-365-days-38-0-chf-expected-38-0.png"
+    },
+    {
+      "step": "Clicked add_circle for Event S 100 - Summer",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/42-clicked-add-circle-for-event-s-100-summer.png"
+    },
+    {
+      "step": "Selected Category: Warm air heaters",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/43-selected-category-warm-air-heaters.png"
+    },
+    {
+      "step": "Selected Group: S 100",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/44-selected-group-s-100.png"
+    },
+    {
+      "step": "Selected Price Class: Event S 100 - Summer",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/45-selected-price-class-event-s-100-summer.png"
+    },
+    {
+      "step": "Clicked Ok to add Event S 100 - Summer",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/46-clicked-ok-to-add-event-s-100-summer.png"
+    },
+    {
+      "step": "Event S 100 - Summer: 1 days = 140.0 CHF (expected 140.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/47-event-s-100-summer-1-days-140-0-chf-expected-140-0.png"
+    },
+    {
+      "step": "Event S 100 - Summer: 10 days = 140.0 CHF (expected 140.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/48-event-s-100-summer-10-days-140-0-chf-expected-140-0.png"
+    },
+    {
+      "step": "Event S 100 - Summer: 11 days = 44.0 CHF (expected 44.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/49-event-s-100-summer-11-days-44-0-chf-expected-44-0.png"
+    },
+    {
+      "step": "Event S 100 - Summer: 30 days = 44.0 CHF (expected 44.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/50-event-s-100-summer-30-days-44-0-chf-expected-44-0.png"
+    },
+    {
+      "step": "Event S 100 - Summer: 31 days = 42.0 CHF (expected 42.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/51-event-s-100-summer-31-days-42-0-chf-expected-42-0.png"
+    },
+    {
+      "step": "Event S 100 - Summer: 90 days = 42.0 CHF (expected 42.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/52-event-s-100-summer-90-days-42-0-chf-expected-42-0.png"
+    },
+    {
+      "step": "Event S 100 - Summer: 91 days = 40.0 CHF (expected 40.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/53-event-s-100-summer-91-days-40-0-chf-expected-40-0.png"
+    },
+    {
+      "step": "Event S 100 - Summer: 180 days = 40.0 CHF (expected 40.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/54-event-s-100-summer-180-days-40-0-chf-expected-40-0.png"
+    },
+    {
+      "step": "Clicked add_circle for Event S 100 - Winter",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/55-clicked-add-circle-for-event-s-100-winter.png"
+    },
+    {
+      "step": "Selected Category: Warm air heaters",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/56-selected-category-warm-air-heaters.png"
+    },
+    {
+      "step": "Selected Group: S 100",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/57-selected-group-s-100.png"
+    },
+    {
+      "step": "Selected Price Class: Event S 100 - Winter",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/58-selected-price-class-event-s-100-winter.png"
+    },
+    {
+      "step": "Clicked Ok to add Event S 100 - Winter",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/59-clicked-ok-to-add-event-s-100-winter.png"
+    },
+    {
+      "step": "Event S 100 - Winter: 1 days = 150.0 CHF (expected 150.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/60-event-s-100-winter-1-days-150-0-chf-expected-150-0.png"
+    },
+    {
+      "step": "Event S 100 - Winter: 10 days = 150.0 CHF (expected 150.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/61-event-s-100-winter-10-days-150-0-chf-expected-150-0.png"
+    },
+    {
+      "step": "Event S 100 - Winter: 11 days = 50.0 CHF (expected 50.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/62-event-s-100-winter-11-days-50-0-chf-expected-50-0.png"
+    },
+    {
+      "step": "Event S 100 - Winter: 30 days = 50.0 CHF (expected 50.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/63-event-s-100-winter-30-days-50-0-chf-expected-50-0.png"
+    },
+    {
+      "step": "Event S 100 - Winter: 31 days = 48.0 CHF (expected 48.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/64-event-s-100-winter-31-days-48-0-chf-expected-48-0.png"
+    },
+    {
+      "step": "Event S 100 - Winter: 90 days = 48.0 CHF (expected 48.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/65-event-s-100-winter-90-days-48-0-chf-expected-48-0.png"
+    },
+    {
+      "step": "Event S 100 - Winter: 91 days = 46.0 CHF (expected 46.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/66-event-s-100-winter-91-days-46-0-chf-expected-46-0.png"
+    },
+    {
+      "step": "Event S 100 - Winter: 180 days = 46.0 CHF (expected 46.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/67-event-s-100-winter-180-days-46-0-chf-expected-46-0.png"
+    },
+    {
+      "step": "Event S 100 - Winter: 181 days = 40.0 CHF (expected 40.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/68-event-s-100-winter-181-days-40-0-chf-expected-40-0.png"
+    },
+    {
+      "step": "Event S 100 - Winter: 360 days = 40.0 CHF (expected 40.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/69-event-s-100-winter-360-days-40-0-chf-expected-40-0.png"
+    },
+    {
+      "step": "Final screenshot captured - S 100 Pricing test complete",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_s100_set/screenshots/70-final-screenshot-captured-s-100-pricing-test-complete.png"
+    }
+  ]
+}

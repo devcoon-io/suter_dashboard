@@ -1,8 +1,9 @@
 {
   "test_name": "Create Proposal Cycle - Dehumidification (HAG)",
-  "started_at": "2026-01-02 22:06:54 UTC",
-  "duration": "00 hr 00 min 34 sec",
-  "video_file": "8bf2f23f9205013300cea707c2677bfc.webm",
+  "test_description": "Creates a new offer request by filling out the multi-step form.",
+  "test_group": "Create Project (Dehumidification)",
+  "started_at": "2026-01-09 10:56:03 UTC",
+  "duration": "00 hr 00 min 48 sec",
   "overall_status": "pass",
   "steps": [
     {

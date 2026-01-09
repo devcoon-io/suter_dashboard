@@ -1,0 +1,46 @@
+{
+  "test_name": "Create Potential Project - Hot Water (SET)",
+  "test_description": "Creates a new potential project by filling out the form.",
+  "test_group": "Potential Project",
+  "started_at": "2026-01-09 11:38:43 UTC",
+  "duration": "00 hr 00 min 20 sec",
+  "overall_status": "fail",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected SET from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/05-selected-set-from-dropdown.png"
+    },
+    {
+      "step": "Navigated to Create Opportunity page",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/06-navigated-to-create-opportunity-page.png"
+    },
+    {
+      "step": "Filled project form fields",
+      "status": "fail",
+      "details": "name 'fill_project_form' is not defined",
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/07-filled-project-form-fields.png"
+    }
+  ]
+}

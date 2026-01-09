@@ -1,8 +1,10 @@
 {
   "test_name": "Create Proposal Cycle - Dehumidification (E4R)",
-  "started_at": "2026-01-02 23:45:46 UTC",
-  "duration": "00 hr 02 min 24 sec",
-  "overall_status": "fail",
+  "test_description": "Creates a new offer request by filling out the multi-step form.",
+  "test_group": "Create Project (Dehumidification)",
+  "started_at": "2026-01-09 10:53:41 UTC",
+  "duration": "00 hr 02 min 21 sec",
+  "overall_status": "pass",
   "steps": [
     {
       "step": "Login page loaded",
@@ -71,9 +73,13 @@
     },
     {
       "step": "Offer number appeared",
-      "status": "fail",
-      "details": "Locator.wait_for: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"h3:has-text(\\\"Offer Nr.:\\\")\").first to be visible\n",
+      "status": "pass",
       "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/14-offer-number-appeared.png"
+    },
+    {
+      "step": "Final screenshot captured",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/15-final-screenshot-captured.png"
     }
   ]
 }

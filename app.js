@@ -39,6 +39,8 @@ const closeModal = document.getElementById("closeModal");
 
 let currentFilter = null;
 let allTests = [];
+let searchQuery = "";
+let searchDebounceTimer = null;
 
 /*************************************************
  * HELPERS
@@ -342,16 +344,81 @@ function chevron(){
 }
 
 function applyFilter(){
-  const cards = testsList.querySelectorAll('.test-card');
-  cards.forEach(card => {
-    const status = card.dataset.status;
-    if (currentFilter === null || status === currentFilter){
-      card.classList.remove('filtered-out');
+  const groupCards = testsList.querySelectorAll('.group-card');
+  groupCards.forEach(groupCard => {
+    const testCards = groupCard.querySelectorAll('.test-card');
+    let visibleCount = 0;
+    let visibleStatuses = [];
+    
+    testCards.forEach(testCard => {
+      const testStatus = testCard.dataset.status;
+      if (currentFilter === null || testStatus === currentFilter){
+        testCard.classList.remove('filtered-out');
+        visibleCount++;
+        visibleStatuses.push(testStatus);
+      } else {
+        testCard.classList.add('filtered-out');
+      }
+    });
+    
+    // Hide group if no tests match the filter
+    if (visibleCount === 0 && currentFilter !== null){
+      groupCard.classList.add('filtered-out');
     } else {
-      card.classList.add('filtered-out');
+      groupCard.classList.remove('filtered-out');
+      
+      // Update group status badge based on visible tests only
+      const groupBadge = groupCard.querySelector('.group-row .badge');
+      const groupCount = groupCard.querySelector('.group-count');
+      
+      if (groupBadge && currentFilter !== null){
+        // When filtering, show the filtered status
+        groupBadge.className = `badge ${currentFilter}`;
+        groupBadge.textContent = currentFilter.replace("_", " ").toUpperCase();
+      } else if (groupBadge && currentFilter === null){
+        // When not filtering, recalculate based on all visible tests
+        const hasFailure = visibleStatuses.includes('fail');
+        const allPass = visibleStatuses.every(s => s === 'pass');
+        const newStatus = hasFailure ? 'fail' : (allPass ? 'pass' : 'not_tested');
+        groupBadge.className = `badge ${newStatus}`;
+        groupBadge.textContent = newStatus.replace("_", " ").toUpperCase();
+      }
+      
+      // Update count to show only visible tests
+      if (groupCount){
+        groupCount.textContent = visibleCount;
+      }
     }
   });
   renderSummary(allTests);
+}
+
+function groupTestsByGroup(tests){
+  const groups = new Map();
+  for (const t of tests){
+    const groupName = t.test_group || "Ungrouped";
+    if (!groups.has(groupName)){
+      groups.set(groupName, []);
+    }
+    groups.get(groupName).push(t);
+  }
+  return groups;
+}
+
+function getGroupStatus(tests){
+  const hasFailure = tests.some(t => normalizeStatus(t.overall_status) === "fail");
+  if (hasFailure) return "fail";
+  const allPass = tests.every(t => normalizeStatus(t.overall_status) === "pass");
+  if (allPass) return "pass";
+  return "not_tested";
+}
+
+function filterTestsBySearch(tests, query){
+  if (!query) return tests;
+  const lowerQuery = query.toLowerCase();
+  return tests.filter(t => 
+    (t.test_name || "").toLowerCase().includes(lowerQuery)
+  );
 }
 
 function renderTests(tests){
@@ -367,6 +434,60 @@ function renderTests(tests){
   emptyState.classList.add("hidden");
   renderSummary(tests);
   
+  // Add search bar (only once)
+  const searchBox = document.createElement("div");
+  searchBox.className = "search-box-container";
+  searchBox.innerHTML = `
+    <div class="search-box">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="searchInput" placeholder="Search by test name..." value="${escapeHtml(searchQuery)}">
+      ${searchQuery ? `<button class="search-clear" id="searchClear" title="Clear search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>` : ''}
+    </div>
+  `;
+  testsList.appendChild(searchBox);
+  
+  const searchInput = document.getElementById('searchInput');
+  if (searchInput){
+    searchInput.addEventListener('input', (e) => {
+      const value = e.target.value;
+      if (searchDebounceTimer) clearTimeout(searchDebounceTimer);
+      searchDebounceTimer = setTimeout(() => {
+        searchQuery = value;
+        renderTestsContent(allTests);
+      }, 150);
+    });
+  }
+  
+  const searchClear = document.getElementById('searchClear');
+  if (searchClear){
+    searchClear.addEventListener('click', () => {
+      if (searchDebounceTimer) clearTimeout(searchDebounceTimer);
+      searchQuery = '';
+      const input = document.getElementById('searchInput');
+      if (input) input.value = '';
+      renderTestsContent(allTests);
+    });
+  }
+  
+  // Render the tests content
+  renderTestsContent(tests);
+}
+
+function renderTestsContent(tests){
+  // Remove only the tests wrapper, keep search box
+  const existingWrapper = testsList.querySelector('.tests-wrapper');
+  if (existingWrapper){
+    existingWrapper.remove();
+  }
+  
   const totalDuration = calculateTotalDuration(tests.filter(t => normalizeStatus(t.overall_status) !== "not_tested"));
   
   const testsWrapper = document.createElement("div");
@@ -375,7 +496,7 @@ function renderTests(tests){
   testsWrapper.innerHTML = `
     <div class="tests-header">
       <div>Status</div>
-      <div>Name</div>
+      <div>Group / Test Name</div>
       <div class="col-duration">${escapeHtml(totalDuration)}</div>
       <div class="col-started">Time</div>
       <div></div>
@@ -386,113 +507,155 @@ function renderTests(tests){
   testsContainer.className = "tests";
   testsWrapper.appendChild(testsContainer);
 
-  for (const t of tests){
-    const status = normalizeStatus(t.overall_status);
-    const base   = t.artifact_base || null;
-
-    /* ===== D) STEPS FALLBACK ===== */
-    const steps = Array.isArray(t.steps) && t.steps.length
-      ? t.steps
-      : [{ step: "Test not executed", status: "not_tested" }];
-
-    const videoSrc = t.video_file;
-    const isNotTested = status === "not_tested";
-    const kyivTime = convertToKyivTime(t.started_at);
-
-    const card = document.createElement("div");
-    card.className = "test-card";
-    card.dataset.status = status;
-    if (isNotTested) card.classList.add("not-expandable");
-
-    card.innerHTML = `
-      <div class="test-row" ${isNotTested ? '' : 'tabindex="0" role="button" aria-expanded="false"'}>
-        <div class="badge ${status}">${status.replace("_"," ").toUpperCase()}</div>
-        <div class="test-name">${escapeHtml(t.test_name || "Unnamed test")}</div>
-        <div class="meta col-duration">${escapeHtml(formatDuration(t.duration))}</div>
-        <div class="meta col-started">${escapeHtml(kyivTime)}</div>
-        ${isNotTested ? '<div class="chev"></div>' : `<div class="chev">${chevron()}</div>`}
-      </div>
-
-      <div class="steps">
-        ${videoSrc ? `<div class="video-player" data-video-src="${videoSrc}">
-          <video controls controlsList="nodownload" preload="none"></video>
-        </div>` : ''}
-        ${steps.map(s => {
-          const st = normalizeStatus(s.status);
-          const screenshotSrc = resolveArtifact(base, s.screenshot);
-
-          const ssContent = screenshotSrc
-            ? `<a class="screenshot-link-icon" href="${screenshotSrc}" target="_blank" title="Open in new tab">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
-              <div class="screenshot-thumb" data-screenshot="${screenshotSrc}">
-                <img src="${screenshotSrc}" alt="Screenshot" loading="lazy">
-              </div>`
-            : `<span class="meta">-</span>`;
-
-          const stepIcon = st === 'pass' 
-            ? `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`
-            : st === 'fail'
-            ? `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`
-            : `<span>-</span>`;
-
-          return `
-            <div class="step-row">
-              <div class="step-badge ${st}">${stepIcon}</div>
-              <div class="step-name">${escapeHtml(s.step)}</div>
-              <div class="step-screenshot">${ssContent}</div>
-            </div>
-          `;
-        }).join("")}
-      </div>
-    `;
-
-    const row = card.querySelector(".test-row");
+  // Filter tests by search query
+  const filteredTests = filterTestsBySearch(tests, searchQuery);
+  
+  // Group tests by test_group
+  const groups = groupTestsByGroup(filteredTests);
+  
+  for (const [groupName, groupTests] of groups){
+    const groupStatus = getGroupStatus(groupTests);
+    const groupDuration = calculateTotalDuration(groupTests.filter(t => normalizeStatus(t.overall_status) !== "not_tested"));
     
-    if (!isNotTested){
-      const videoPlayer = card.querySelector(".video-player");
-      const video = videoPlayer ? videoPlayer.querySelector("video") : null;
-      const videoSrcData = videoPlayer ? videoPlayer.dataset.videoSrc : null;
-      let videoLoaded = false;
+    const groupCard = document.createElement("div");
+    groupCard.className = "group-card";
+    groupCard.dataset.status = groupStatus;
+    
+    groupCard.innerHTML = `
+      <div class="group-row" tabindex="0" role="button" aria-expanded="false">
+        <div class="badge ${groupStatus}">${groupStatus.replace("_"," ").toUpperCase()}</div>
+        <div class="group-name">${escapeHtml(groupName)} <span class="group-count">${groupTests.length}</span></div>
+        <div class="meta col-duration">${escapeHtml(groupDuration)}</div>
+        <div class="meta col-started"></div>
+        <div class="chev">${chevron()}</div>
+      </div>
+      <div class="group-tests"></div>
+    `;
+    
+    const groupRow = groupCard.querySelector(".group-row");
+    const groupTestsContainer = groupCard.querySelector(".group-tests");
+    
+    groupRow.addEventListener("click", () => {
+      groupCard.classList.toggle("expanded");
+      groupRow.setAttribute(
+        "aria-expanded",
+        groupCard.classList.contains("expanded") ? "true" : "false"
+      );
+    });
+    
+    // Render tests within this group
+    for (const t of groupTests){
+      const status = normalizeStatus(t.overall_status);
+      const base = t.artifact_base || null;
+
+      const steps = Array.isArray(t.steps) && t.steps.length
+        ? t.steps
+        : [{ step: "Test not executed", status: "not_tested" }];
+
+      const videoSrc = t.video_file;
+      const isNotTested = status === "not_tested";
+      const kyivTime = convertToKyivTime(t.started_at);
+
+      const card = document.createElement("div");
+      card.className = "test-card";
+      card.dataset.status = status;
+      if (isNotTested) card.classList.add("not-expandable");
+
+      card.innerHTML = `
+        <div class="test-row" ${isNotTested ? '' : 'tabindex="0" role="button" aria-expanded="false"'}>
+          <div class="badge ${status}">${status.replace("_"," ").toUpperCase()}</div>
+          <div class="test-name">${escapeHtml(t.test_name || "Unnamed test")}</div>
+          <div class="meta col-duration">${escapeHtml(formatDuration(t.duration))}</div>
+          <div class="meta col-started">${escapeHtml(kyivTime)}</div>
+          ${isNotTested ? '<div class="chev"></div>' : `<div class="chev">${chevron()}</div>`}
+        </div>
+
+        <div class="steps">
+          ${t.test_description ? `<div class="test-description">${escapeHtml(t.test_description)}</div>` : ''}
+          ${videoSrc ? `<div class="video-player" data-video-src="${videoSrc}">
+            <video controls controlsList="nodownload" preload="none"></video>
+          </div>` : ''}
+          ${steps.map(s => {
+            const st = normalizeStatus(s.status);
+            const screenshotSrc = resolveArtifact(base, s.screenshot);
+
+            const ssContent = screenshotSrc
+              ? `<a class="screenshot-link-icon" href="${screenshotSrc}" target="_blank" title="Open in new tab">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <div class="screenshot-thumb" data-screenshot="${screenshotSrc}">
+                  <img src="${screenshotSrc}" alt="Screenshot" loading="lazy">
+                </div>`
+              : `<span class="meta">-</span>`;
+
+            const stepIcon = st === 'pass' 
+              ? `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`
+              : st === 'fail'
+              ? `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`
+              : `<span>-</span>`;
+
+            return `
+              <div class="step-row">
+                <div class="step-badge ${st}">${stepIcon}</div>
+                <div class="step-name">${escapeHtml(s.step)}</div>
+                <div class="step-screenshot">${ssContent}</div>
+              </div>
+            `;
+          }).join("")}
+        </div>
+      `;
+
+      const row = card.querySelector(".test-row");
       
-      if (video && videoSrcData){
-        video.addEventListener("error", () => {
-          videoPlayer.innerHTML = `<div class="video-unavailable">VIDEO FILE NOT FOUND</div>`;
-        });
-      }
-      
-      row.addEventListener("click", () => {
-        const isExpanding = !card.classList.contains("expanded");
+      if (!isNotTested){
+        const videoPlayer = card.querySelector(".video-player");
+        const video = videoPlayer ? videoPlayer.querySelector("video") : null;
+        const videoSrcData = videoPlayer ? videoPlayer.dataset.videoSrc : null;
+        let videoLoaded = false;
         
-        card.classList.toggle("expanded");
-        row.setAttribute(
-          "aria-expanded",
-          card.classList.contains("expanded") ? "true" : "false"
-        );
-        
-        if (isExpanding && video && videoSrcData && !videoLoaded){
-          video.src = videoSrcData;
-          videoLoaded = true;
+        if (video && videoSrcData){
+          video.addEventListener("error", () => {
+            videoPlayer.innerHTML = `<div class="video-unavailable">VIDEO FILE NOT FOUND</div>`;
+          });
         }
-      });
-      
-      const screenshotThumbs = card.querySelectorAll(".screenshot-thumb");
-      screenshotThumbs.forEach(thumb => {
-        thumb.addEventListener("click", (e) => {
-          e.preventDefault();
-          const screenshotSrc = thumb.dataset.screenshot;
-          if (screenshotSrc){
-            openImageModal(screenshotSrc);
+        
+        row.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const isExpanding = !card.classList.contains("expanded");
+          
+          card.classList.toggle("expanded");
+          row.setAttribute(
+            "aria-expanded",
+            card.classList.contains("expanded") ? "true" : "false"
+          );
+          
+          if (isExpanding && video && videoSrcData && !videoLoaded){
+            video.src = videoSrcData;
+            videoLoaded = true;
           }
         });
-      });
-    }
+        
+        const screenshotThumbs = card.querySelectorAll(".screenshot-thumb");
+        screenshotThumbs.forEach(thumb => {
+          thumb.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const screenshotSrc = thumb.dataset.screenshot;
+            if (screenshotSrc){
+              openImageModal(screenshotSrc);
+            }
+          });
+        });
+      }
 
-    testsContainer.appendChild(card);
+      groupTestsContainer.appendChild(card);
+    }
+    
+    testsContainer.appendChild(groupCard);
   }
   
   testsList.appendChild(testsWrapper);
@@ -657,6 +820,13 @@ accessPasswordInput.addEventListener("keydown", e => {
 themeToggle.addEventListener("click", toggleTheme);
 
 collapseAllBtn.addEventListener("click", () => {
+  const expandedGroups = document.querySelectorAll(".group-card.expanded");
+  expandedGroups.forEach(group => {
+    group.classList.remove("expanded");
+    const row = group.querySelector(".group-row");
+    if (row) row.setAttribute("aria-expanded", "false");
+  });
+  
   const expandedCards = document.querySelectorAll(".test-card.expanded");
   expandedCards.forEach(card => {
     card.classList.remove("expanded");

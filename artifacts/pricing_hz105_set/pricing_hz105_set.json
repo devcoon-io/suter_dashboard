@@ -1,0 +1,155 @@
+{
+  "test_name": "Pricing Test - HZ 105 / Hybrid (GEN3) (SET)",
+  "test_description": "Creates a project in SET with Sales application and Test template, then adds HZ 105 items with 4 different price classes to verify pricing at different rental period boundaries.",
+  "test_group": "Pricelist Validation",
+  "started_at": "2026-01-09 11:43:12 UTC",
+  "duration": "00 hr 02 min 07 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected SET from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/05-selected-set-from-dropdown.png"
+    },
+    {
+      "step": "Clicked Projects menu",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/06-clicked-projects-menu.png"
+    },
+    {
+      "step": "Clicked Proposal tab",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/07-clicked-proposal-tab.png"
+    },
+    {
+      "step": "Selected Sales from application dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/08-selected-sales-from-application-dropdown.png"
+    },
+    {
+      "step": "Selected Test from template dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/09-selected-test-from-template-dropdown.png"
+    },
+    {
+      "step": "Filled project form fields",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/10-filled-project-form-fields.png"
+    },
+    {
+      "step": "Clicked Next button (step 1)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/11-clicked-next-button-step-1.png"
+    },
+    {
+      "step": "Clicked add_circle for Gen 3 / 105 kW / WA",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/12-clicked-add-circle-for-gen-3-105-kw-wa.png"
+    },
+    {
+      "step": "Selected Category: Warm air heaters",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/13-selected-category-warm-air-heaters.png"
+    },
+    {
+      "step": "Selected Group: HZ 105 / Hybrid (GEN3)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/14-selected-group-hz-105-hybrid-gen3.png"
+    },
+    {
+      "step": "Selected Price Class: Gen 3 / 105 kW / WA",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/15-selected-price-class-gen-3-105-kw-wa.png"
+    },
+    {
+      "step": "Clicked Ok to add Gen 3 / 105 kW / WA",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/16-clicked-ok-to-add-gen-3-105-kw-wa.png"
+    },
+    {
+      "step": "Gen 3 / 105 kW / WA: 1 days = 150.0 CHF (expected 150.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/17-gen-3-105-kw-wa-1-days-150-0-chf-expected-150-0.png"
+    },
+    {
+      "step": "Gen 3 / 105 kW / WA: 10 days = 150.0 CHF (expected 150.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/18-gen-3-105-kw-wa-10-days-150-0-chf-expected-150-0.png"
+    },
+    {
+      "step": "Gen 3 / 105 kW / WA: 11 days = 118.0 CHF (expected 118.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/19-gen-3-105-kw-wa-11-days-118-0-chf-expected-118-0.png"
+    },
+    {
+      "step": "Gen 3 / 105 kW / WA: 30 days = 118.0 CHF (expected 118.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/20-gen-3-105-kw-wa-30-days-118-0-chf-expected-118-0.png"
+    },
+    {
+      "step": "Gen 3 / 105 kW / WA: 31 days = 87.0 CHF (expected 87.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/21-gen-3-105-kw-wa-31-days-87-0-chf-expected-87-0.png"
+    },
+    {
+      "step": "Gen 3 / 105 kW / WA: 90 days = 87.0 CHF (expected 87.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/22-gen-3-105-kw-wa-90-days-87-0-chf-expected-87-0.png"
+    },
+    {
+      "step": "Gen 3 / 105 kW / WA: 91 days = 84.0 CHF (expected 84.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/23-gen-3-105-kw-wa-91-days-84-0-chf-expected-84-0.png"
+    },
+    {
+      "step": "Gen 3 / 105 kW / WA: 180 days = 84.0 CHF (expected 84.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/24-gen-3-105-kw-wa-180-days-84-0-chf-expected-84-0.png"
+    },
+    {
+      "step": "Gen 3 / 105 kW / WA: 181 days = 80.0 CHF (expected 80.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/25-gen-3-105-kw-wa-181-days-80-0-chf-expected-80-0.png"
+    },
+    {
+      "step": "Gen 3 / 105 kW / WA: 360 days = 80.0 CHF (expected 80.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/26-gen-3-105-kw-wa-360-days-80-0-chf-expected-80-0.png"
+    },
+    {
+      "step": "Gen 3 / 105 kW / WA: 361 days = 63.0 CHF (expected 63.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/27-gen-3-105-kw-wa-361-days-63-0-chf-expected-63-0.png"
+    },
+    {
+      "step": "Gen 3 / 105 kW / WA: 365 days = 63.0 CHF (expected 63.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/28-gen-3-105-kw-wa-365-days-63-0-chf-expected-63-0.png"
+    },
+    {
+      "step": "Final screenshot captured - HZ 105 Pricing test complete",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz105_set/screenshots/29-final-screenshot-captured-hz-105-pricing-test-complete.png"
+    }
+  ]
+}

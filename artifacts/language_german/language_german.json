@@ -1,0 +1,65 @@
+{
+  "test_name": "Language Change Test - German (DE)",
+  "test_description": "Verifies that a user can successfully change the language to German.",
+  "test_group": "Dashboard Functionality",
+  "started_at": "2026-01-09 11:25:23 UTC",
+  "duration": "00 hr 00 min 28 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/language_german/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/language_german/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/language_german/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/language_german/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected SET from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/language_german/screenshots/05-selected-set-from-dropdown.png"
+    },
+    {
+      "step": "Clicked account_circle icon",
+      "status": "pass",
+      "screenshot": "artifacts/language_german/screenshots/06-clicked-account-circle-icon.png"
+    },
+    {
+      "step": "Clicked language dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/language_german/screenshots/07-clicked-language-dropdown.png"
+    },
+    {
+      "step": "Selected DE (German) language",
+      "status": "pass",
+      "screenshot": "artifacts/language_german/screenshots/08-selected-de-german-language.png"
+    },
+    {
+      "step": "Clicked Update button",
+      "status": "pass",
+      "screenshot": "artifacts/language_german/screenshots/09-clicked-update-button.png"
+    },
+    {
+      "step": "Verify German menu items - Found: ['Marktplatz', 'Dashboard', 'Projekte', 'Kunden', 'Equipment', 'Statistik', 'Admin', 'Fernwartung', 'Logout']",
+      "status": "pass",
+      "screenshot": "artifacts/language_german/screenshots/10-verify-german-menu-items-found-marktplatz-dashboard-projekte-kunden-equipment-statistik-admin-fernwartung-logout.png"
+    },
+    {
+      "step": "Final screenshot captured - German language test complete",
+      "status": "pass",
+      "screenshot": "artifacts/language_german/screenshots/11-final-screenshot-captured-german-language-test-complete.png"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "test_name": "Login Test",
+  "test_description": "Verifies that a user can successfully log in to the application.",
+  "test_group": "Dashboard Functionality",
+  "started_at": "2026-01-09 11:25:52 UTC",
+  "duration": "00 hr 00 min 10 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/login/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Login form elements present",
+      "status": "pass",
+      "screenshot": "artifacts/login/screenshots/02-login-form-elements-present.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/login/screenshots/03-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/login/screenshots/04-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful - URL changed",
+      "status": "pass",
+      "screenshot": "artifacts/login/screenshots/05-login-successful-url-changed.png"
+    },
+    {
+      "step": "Logout button visible - user logged in",
+      "status": "pass",
+      "screenshot": "artifacts/login/screenshots/06-logout-button-visible-user-logged-in.png"
+    },
+    {
+      "step": "Final screenshot captured - Login test complete",
+      "status": "pass",
+      "screenshot": "artifacts/login/screenshots/07-final-screenshot-captured-login-test-complete.png"
+    }
+  ]
+}

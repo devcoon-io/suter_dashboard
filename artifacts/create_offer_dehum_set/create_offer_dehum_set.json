@@ -1,8 +1,9 @@
 {
   "test_name": "Create Proposal Cycle - Dehumidification (SET)",
-  "started_at": "2026-01-02 22:18:13 UTC",
-  "duration": "00 hr 00 min 37 sec",
-  "video_file": "dff856609294fa23e709366b1e90baea.webm",
+  "test_description": "Creates a new offer request by filling out the multi-step form.",
+  "test_group": "Create Project (Dehumidification)",
+  "started_at": "2026-01-09 10:56:52 UTC",
+  "duration": "00 hr 00 min 49 sec",
   "overall_status": "pass",
   "steps": [
     {

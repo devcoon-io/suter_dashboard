@@ -1,170 +1,170 @@
 {
-  "generated_at": "2026-01-09T09:16:51.948Z",
+  "generated_at": "2026-01-09T13:04:59.803Z",
   "folders": [
-    {
-      "name": "create_offer_dehum_div",
-      "json_file": "create_offer_dehum_div.json",
-      "video_file": "0916e689481790c45137da3c3d0734a9.webm"
-    },
     {
       "name": "create_offer_dehum_e4r",
       "json_file": "create_offer_dehum_e4r.json",
-      "video_file": "e46eacfda5b70a0b3e3ac05fd8a25445.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_dehum_hag",
       "json_file": "create_offer_dehum_hag.json",
-      "video_file": "8bf2f23f9205013300cea707c2677bfc.webm"
-    },
-    {
-      "name": "create_offer_dehum_hku",
-      "json_file": "create_offer_dehum_hku.json",
-      "video_file": "352beb8326c3172c14813e43415656ce.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_dehum_set",
       "json_file": "create_offer_dehum_set.json",
-      "video_file": "dff856609294fa23e709366b1e90baea.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_dehum_sud",
       "json_file": "create_offer_dehum_sud.json",
-      "video_file": "84e658601d5451d929252b41e67ad7ed.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_dehum_sur",
       "json_file": "create_offer_dehum_sur.json",
-      "video_file": "b8c9e31ff6cd04a84f2b016b5892c4ea.webm"
-    },
-    {
-      "name": "create_offer_hotwat_div",
-      "json_file": "create_offer_hotwat_div.json",
-      "video_file": "837d3b5d9098a9d2ce1db6ea0cd18f36.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_hotwat_e4r",
       "json_file": "create_offer_hotwat_e4r.json",
-      "video_file": "6066511542b0722a500cc5e12f802099.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_hotwat_hag",
       "json_file": "create_offer_hotwat_hag.json",
-      "video_file": "b68b7c6716bd31c15d0a7d05d0b9ba2c.webm"
-    },
-    {
-      "name": "create_offer_hotwat_hku",
-      "json_file": "create_offer_hotwat_hku.json",
-      "video_file": "2f9a14489a4d50770ae29f7398c1089e.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_hotwat_set",
       "json_file": "create_offer_hotwat_set.json",
-      "video_file": "4ec2fd9bcb31ea8323d0623dcc98a4d0.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_hotwat_sud",
       "json_file": "create_offer_hotwat_sud.json",
-      "video_file": "fad45632065157a4ee3eb1e21f488adf.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_hotwat_sur",
       "json_file": "create_offer_hotwat_sur.json",
-      "video_file": "784b7ffbd9028d2004d9a5002ba16928.webm"
-    },
-    {
-      "name": "create_offer_sales_div",
-      "json_file": "create_offer_sales_div.json",
-      "video_file": "9a024e72ccefcb0209ee17aaef5da491.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_sales_e4r",
       "json_file": "create_offer_sales_e4r.json",
-      "video_file": "52a5f457c22b93c236ab0caf643d2a2e.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_sales_hag",
       "json_file": "create_offer_sales_hag.json",
-      "video_file": "2a9e437b3bbe044b3589f64837f37b42.webm"
-    },
-    {
-      "name": "create_offer_sales_hku",
-      "json_file": "create_offer_sales_hku.json",
-      "video_file": "686f1b04c281f79ac1d69d8892b4ddf3.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_sales_set",
       "json_file": "create_offer_sales_set.json",
-      "video_file": "051411dcaa069bd5295a4000396f64ef.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_sales_sud",
       "json_file": "create_offer_sales_sud.json",
-      "video_file": "85b4e11fd6028b33f1b2be913ba4869c.webm"
+      "video_file": "b1496529330db15f3d1e3e740f1d5371.webm"
     },
     {
       "name": "create_offer_sales_sur",
       "json_file": "create_offer_sales_sur.json",
-      "video_file": "7c1f197938a0956ded74964d0c229be6.webm"
-    },
-    {
-      "name": "create_offer_warmair_div",
-      "json_file": "create_offer_warmair_div.json",
-      "video_file": "912416f3c7282c9a0d844d114e4718fa.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_warmair_e4r",
       "json_file": "create_offer_warmair_e4r.json",
-      "video_file": "14bde3de924d0781d5a9e1d3ec1af69d.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_warmair_hag",
       "json_file": "create_offer_warmair_hag.json",
-      "video_file": "87e5e15c0a479445000216e6158fbc85.webm"
-    },
-    {
-      "name": "create_offer_warmair_hku",
-      "json_file": "create_offer_warmair_hku.json",
-      "video_file": "d4e26bae86f2a6ad6781fc390072a7b0.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_warmair_set",
       "json_file": "create_offer_warmair_set.json",
-      "video_file": "7a31ef921295a168350cc641b5000e64.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_warmair_sud",
       "json_file": "create_offer_warmair_sud.json",
-      "video_file": "d0298b2f1428980d75682542fe632eac.webm"
+      "video_file": null
     },
     {
       "name": "create_offer_warmair_sur",
       "json_file": "create_offer_warmair_sur.json",
-      "video_file": "98848a15a91c2fcbd02a0843754b55c7.webm"
+      "video_file": null
     },
     {
-      "name": "project_lifecycle_e4r",
-      "json_file": "project_lifecycle_e4r.json",
-      "video_file": "114984218f73a0d01a08f4ac7b522e74.webm"
+      "name": "language_english",
+      "json_file": "language_english.json",
+      "video_file": null
     },
     {
-      "name": "project_lifecycle_hag",
-      "json_file": "project_lifecycle_hag.json",
-      "video_file": "4fa12456c4520652b081af09328ec921.webm"
+      "name": "language_french",
+      "json_file": "language_french.json",
+      "video_file": null
     },
     {
-      "name": "project_lifecycle_set",
-      "json_file": "project_lifecycle_set.json",
-      "video_file": "8b1d6c1d4b3006f07559a157721e0e79.webm"
+      "name": "language_german",
+      "json_file": "language_german.json",
+      "video_file": null
     },
     {
-      "name": "project_lifecycle_sud",
-      "json_file": "project_lifecycle_sud.json",
-      "video_file": "81a1972e8ebbd6940109c4dd1f68177f.webm"
+      "name": "login",
+      "json_file": "login.json",
+      "video_file": null
     },
     {
-      "name": "project_lifecycle_sur",
-      "json_file": "project_lifecycle_sur.json",
-      "video_file": "c2c70d67ffa1d08dc3a92fc4e6d51d95.webm"
+      "name": "logout",
+      "json_file": "logout.json",
+      "video_file": null
+    },
+    {
+      "name": "potential_project_dehum_set",
+      "json_file": "potential_project_dehum_set.json",
+      "video_file": null
+    },
+    {
+      "name": "potential_project_hotwat_set",
+      "json_file": "potential_project_hotwat_set.json",
+      "video_file": "573377f5705e087418d6458378aa5b1f.webm"
+    },
+    {
+      "name": "potential_project_sales_set",
+      "json_file": "potential_project_sales_set.json",
+      "video_file": "27a9205e4667c54657c739ece28e0ed5.webm"
+    },
+    {
+      "name": "potential_project_warmair_set",
+      "json_file": "potential_project_warmair_set.json",
+      "video_file": null
+    },
+    {
+      "name": "pricing_g200_set",
+      "json_file": "pricing_g200_set.json",
+      "video_file": null
+    },
+    {
+      "name": "pricing_hz105_set",
+      "json_file": "pricing_hz105_set.json",
+      "video_file": null
+    },
+    {
+      "name": "pricing_s100_set",
+      "json_file": "pricing_s100_set.json",
+      "video_file": null
+    },
+    {
+      "name": "pricing_s50_set",
+      "json_file": "pricing_s50_set.json",
+      "video_file": null
     }
   ]
 }

@@ -1,0 +1,65 @@
+{
+  "test_name": "Language Change Test - French (FR)",
+  "test_description": "Verifies that a user can successfully change the language to French.",
+  "test_group": "Dashboard Functionality",
+  "started_at": "2026-01-09 11:24:53 UTC",
+  "duration": "00 hr 00 min 30 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/language_french/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/language_french/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/language_french/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/language_french/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected SET from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/language_french/screenshots/05-selected-set-from-dropdown.png"
+    },
+    {
+      "step": "Clicked account_circle icon",
+      "status": "pass",
+      "screenshot": "artifacts/language_french/screenshots/06-clicked-account-circle-icon.png"
+    },
+    {
+      "step": "Clicked language dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/language_french/screenshots/07-clicked-language-dropdown.png"
+    },
+    {
+      "step": "Selected FR (French) language",
+      "status": "pass",
+      "screenshot": "artifacts/language_french/screenshots/08-selected-fr-french-language.png"
+    },
+    {
+      "step": "Clicked Update button",
+      "status": "pass",
+      "screenshot": "artifacts/language_french/screenshots/09-clicked-update-button.png"
+    },
+    {
+      "step": "Verify French menu items - Found: ['March\u00e9', 'Tableau de bord', 'Projets', 'Clients', 'Equipements', 'Statistiques', 'Admin', 'T\u00e9l\u00e9maintenance', 'Logout']",
+      "status": "pass",
+      "screenshot": "artifacts/language_french/screenshots/10-verify-french-menu-items-found-march-tableau-de-bord-projets-clients-equipements-statistiques-admin-t-l-maintenance-logout.png"
+    },
+    {
+      "step": "Final screenshot captured - French language test complete",
+      "status": "pass",
+      "screenshot": "artifacts/language_french/screenshots/11-final-screenshot-captured-french-language-test-complete.png"
+    }
+  ]
+}

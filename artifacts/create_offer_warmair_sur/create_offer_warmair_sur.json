@@ -1,8 +1,9 @@
 {
   "test_name": "Create Proposal Cycle - Warm Air (SUR)",
-  "started_at": "2026-01-02 22:01:17 UTC",
-  "duration": "00 hr 00 min 37 sec",
-  "video_file": "98848a15a91c2fcbd02a0843754b55c7.webm",
+  "test_description": "Creates a new offer request by filling out the multi-step form.",
+  "test_group": "Create Project (Warm Air)",
+  "started_at": "2026-01-09 11:14:35 UTC",
+  "duration": "00 hr 00 min 48 sec",
   "overall_status": "pass",
   "steps": [
     {
