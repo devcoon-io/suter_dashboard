@@ -35,17 +35,26 @@
 
       <div class="topbar-right">
         <div class="timebox">
-          <span>Lupfig</span>
+          <span>Switzerland</span>
           <span id="lupfigClock" class="timebox-time">--:--:--</span>
         </div>
 
         <div class="timebox">
-          <span>Kyiv</span>
+          <span>Ukraine</span>
           <span id="kyivClock" class="timebox-time">--:--:--</span>
         </div>
 
+        <button id="collapseAll" class="collapse-all-btn" title="Collapse all tests">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 14 10 14 10 20"></polyline>
+            <polyline points="20 10 14 10 14 4"></polyline>
+            <line x1="14" y1="10" x2="21" y2="3"></line>
+            <line x1="3" y1="21" x2="10" y2="14"></line>
+          </svg>
+        </button>
+
         <div class="timebox">
-          <span>Last Deployed</span>
+          <span>Tested On</span>
           <span id="lastDeployed" class="timebox-time">--</span>
         </div>
 
@@ -82,6 +91,17 @@
     <footer class="footer">
       <span>Automated test results dashboard</span>
     </footer>
+  </div>
+
+  <!-- Image modal -->
+  <div id="imageModal" class="image-modal hidden">
+    <button id="closeModal" class="modal-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <img id="modalImage" src="" alt="Screenshot" />
   </div>
 
   <script src="app.js"></script>

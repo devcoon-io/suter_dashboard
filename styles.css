@@ -108,6 +108,30 @@ html, body {
   color: var(--text);
 }
 
+.collapse-all-btn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.collapse-all-btn:hover {
+  background: var(--border);
+}
+
+.collapse-all-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
 .theme-toggle {
   width: 32px;
   height: 32px;
@@ -184,6 +208,12 @@ html, body {
 .stat-card.not-tested {
   background: rgba(106, 115, 125, 0.08);
   border-color: rgba(106, 115, 125, 0.3);
+}
+
+.stat-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .pie-chart-container {
@@ -420,8 +450,12 @@ html, body {
 .steps {
   border-top: 1px solid var(--border);
   padding: 16px;
-  background: var(--surface);
+  background: #f6f8fa;
   display: none;
+}
+
+body.dark-mode .steps {
+  background: #0a0e14;
 }
 
 .test-card.expanded .steps {
@@ -442,10 +476,10 @@ html, body {
 
 .step-row {
   display: grid;
-  grid-template-columns: 36px 1fr 140px;
+  grid-template-columns: 36px 1fr auto;
   gap: 12px;
   align-items: center;
-  padding: 8px;
+  padding: 12px 8px;
   border-radius: var(--radius);
 }
 
@@ -483,6 +517,60 @@ html, body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.step-screenshot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.screenshot-link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.screenshot-link-icon:hover {
+  background: var(--border);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.screenshot-link-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.screenshot-thumb {
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.screenshot-thumb:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow);
+}
+
+.screenshot-thumb img {
+  display: block;
+  width: 120px;
+  height: 68px;
+  object-fit: cover;
+  background: var(--surface);
 }
 
 .link {
@@ -585,7 +673,7 @@ html, body {
 }
 
 .overlay-card {
-  width: min(360px, 100%);
+  width: min(500px, 100%);
   padding: 40px 32px;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -606,6 +694,7 @@ html, body {
 .field-row {
   display: flex;
   gap: 8px;
+  align-items: center;
 }
 
 .field-row input {
@@ -638,10 +727,27 @@ html, body {
   font-weight: 500;
   cursor: pointer;
   transition: opacity 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .field-row .btn:hover {
   opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+  .overlay-card {
+    padding: 32px 24px;
+  }
+  
+  .field-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .field-row .btn {
+    width: 100%;
+  }
 }
 
 .error {
@@ -684,4 +790,57 @@ html, body {
 
 .loading-spinner.hidden {
   display: none;
+}
+
+/* Image modal */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh;
+  cursor: pointer;
+}
+
+.image-modal.hidden {
+  display: none;
+}
+
+.image-modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+  cursor: default;
+}
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  z-index: 2001;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.modal-close svg {
+  width: 24px;
+  height: 24px;
 }

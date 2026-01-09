@@ -23,6 +23,7 @@ const app = document.getElementById("app");
 const lupfigClock = document.getElementById("lupfigClock");
 const kyivClock = document.getElementById("kyivClock");
 const lastDeployed = document.getElementById("lastDeployed");
+const collapseAllBtn = document.getElementById("collapseAll");
 const themeToggle = document.getElementById("themeToggle");
 const sunIcon = document.getElementById("sunIcon");
 const moonIcon = document.getElementById("moonIcon");
@@ -31,6 +32,10 @@ const summary   = document.getElementById("summary");
 const emptyState = document.getElementById("emptyState");
 const testsList = document.getElementById("testsList");
 const loadingSpinner = document.getElementById("loadingSpinner");
+
+const imageModal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
+const closeModal = document.getElementById("closeModal");
 
 let currentFilter = null;
 let allTests = [];
@@ -291,15 +296,15 @@ function renderSummary(tests){
       <div class="stat-label">Total</div>
       <div class="stat-value">${total}</div>
     </div>
-    <div class="stat-card pass ${currentFilter === 'pass' ? 'active' : ''}" data-filter="pass">
+    <div class="stat-card pass ${currentFilter === 'pass' ? 'active' : ''} ${pass === 0 ? 'disabled' : ''}" data-filter="pass" data-count="${pass}">
       <div class="stat-label">Pass</div>
       <div class="stat-value">${pass}</div>
     </div>
-    <div class="stat-card fail ${currentFilter === 'fail' ? 'active' : ''}" data-filter="fail">
+    <div class="stat-card fail ${currentFilter === 'fail' ? 'active' : ''} ${fail === 0 ? 'disabled' : ''}" data-filter="fail" data-count="${fail}">
       <div class="stat-label">Fail</div>
       <div class="stat-value">${fail}</div>
     </div>
-    <div class="stat-card not-tested ${currentFilter === 'not_tested' ? 'active' : ''}" data-filter="not_tested">
+    <div class="stat-card not-tested ${currentFilter === 'not_tested' ? 'active' : ''} ${nt === 0 ? 'disabled' : ''}" data-filter="not_tested" data-count="${nt}">
       <div class="stat-label">Not Tested</div>
       <div class="stat-value">${nt}</div>
     </div>
@@ -315,6 +320,7 @@ function renderSummary(tests){
   
   document.querySelectorAll('.stat-card[data-filter]').forEach(card => {
     card.addEventListener('click', () => {
+      if (card.classList.contains('disabled')) return;
       const filter = card.dataset.filter;
       currentFilter = filter === 'all' ? null : filter;
       applyFilter();
@@ -409,15 +415,24 @@ function renderTests(tests){
 
       <div class="steps">
         ${videoSrc ? `<div class="video-player" data-video-src="${videoSrc}">
-          <video controls controlsList="nodownload" preload="metadata"></video>
+          <video controls controlsList="nodownload" preload="none"></video>
         </div>` : ''}
         ${steps.map(s => {
           const st = normalizeStatus(s.status);
           const screenshotSrc = resolveArtifact(base, s.screenshot);
 
-          const ssLink = screenshotSrc
-            ? `<a class="link" href="${screenshotSrc}" target="_blank">Open screenshot</a>`
-            : `<span class="meta">Not tested</span>`;
+          const ssContent = screenshotSrc
+            ? `<a class="screenshot-link-icon" href="${screenshotSrc}" target="_blank" title="Open in new tab">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <div class="screenshot-thumb" data-screenshot="${screenshotSrc}">
+                <img src="${screenshotSrc}" alt="Screenshot" loading="lazy">
+              </div>`
+            : `<span class="meta">-</span>`;
 
           const stepIcon = st === 'pass' 
             ? `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`
@@ -429,7 +444,7 @@ function renderTests(tests){
             <div class="step-row">
               <div class="step-badge ${st}">${stepIcon}</div>
               <div class="step-name">${escapeHtml(s.step)}</div>
-              <div>${ssLink}</div>
+              <div class="step-screenshot">${ssContent}</div>
             </div>
           `;
         }).join("")}
@@ -442,20 +457,38 @@ function renderTests(tests){
       const videoPlayer = card.querySelector(".video-player");
       const video = videoPlayer ? videoPlayer.querySelector("video") : null;
       const videoSrcData = videoPlayer ? videoPlayer.dataset.videoSrc : null;
+      let videoLoaded = false;
       
       if (video && videoSrcData){
         video.addEventListener("error", () => {
           videoPlayer.innerHTML = `<div class="video-unavailable">VIDEO FILE NOT FOUND</div>`;
         });
-        video.src = videoSrcData;
       }
       
       row.addEventListener("click", () => {
+        const isExpanding = !card.classList.contains("expanded");
+        
         card.classList.toggle("expanded");
         row.setAttribute(
           "aria-expanded",
           card.classList.contains("expanded") ? "true" : "false"
         );
+        
+        if (isExpanding && video && videoSrcData && !videoLoaded){
+          video.src = videoSrcData;
+          videoLoaded = true;
+        }
+      });
+      
+      const screenshotThumbs = card.querySelectorAll(".screenshot-thumb");
+      screenshotThumbs.forEach(thumb => {
+        thumb.addEventListener("click", (e) => {
+          e.preventDefault();
+          const screenshotSrc = thumb.dataset.screenshot;
+          if (screenshotSrc){
+            openImageModal(screenshotSrc);
+          }
+        });
       });
     }
 
@@ -622,6 +655,51 @@ accessPasswordInput.addEventListener("keydown", e => {
 });
 
 themeToggle.addEventListener("click", toggleTheme);
+
+collapseAllBtn.addEventListener("click", () => {
+  const expandedCards = document.querySelectorAll(".test-card.expanded");
+  expandedCards.forEach(card => {
+    card.classList.remove("expanded");
+    const row = card.querySelector(".test-row");
+    if (row) row.setAttribute("aria-expanded", "false");
+  });
+});
+
+/*************************************************
+ * IMAGE MODAL
+ *************************************************/
+function openImageModal(imageSrc){
+  modalImage.src = imageSrc;
+  imageModal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+}
+
+function closeImageModal(){
+  imageModal.classList.add("hidden");
+  modalImage.src = "";
+  document.body.style.overflow = "";
+}
+
+closeModal.addEventListener("click", (e) => {
+  e.stopPropagation();
+  closeImageModal();
+});
+
+imageModal.addEventListener("click", (e) => {
+  if (e.target === imageModal){
+    closeImageModal();
+  }
+});
+
+modalImage.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !imageModal.classList.contains("hidden")){
+    closeImageModal();
+  }
+});
 
 /*************************************************
  * BOOT
