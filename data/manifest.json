@@ -39,6 +39,12 @@
     "pricing_g200_set.json",
     "pricing_hz105_set.json",
     "pricing_s100_set.json",
-    "pricing_s50_set.json"
+    "pricing_s50_set.json",
+
+    "project_lifecycle_e4r.json",
+    "project_lifecycle_hag.json",
+    "project_lifecycle_set.json",
+    "project_lifecycle_sud.json",
+    "project_lifecycle_sur.json"
   ]
 }
