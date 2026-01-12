@@ -26,6 +26,9 @@
 
     "login.json",
     "logout.json",
+    "contacts.json",
+    "remote_maintenance.json",
+    "tenant_switching.json",
 
     "language_english.json",
     "language_french.json",

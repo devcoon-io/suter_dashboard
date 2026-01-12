@@ -1,0 +1,126 @@
+{
+  "test_name": "Remote Maintenance Link Test",
+  "test_description": "Verifies that the Remote Maintenance link is present for all tenants and points to https://www.pcvisit.de/kundenbereich/downloads/",
+  "test_group": "Dashboard Functionality",
+  "started_at": "2026-01-12 04:20:18 UTC",
+  "duration": "00 hr 00 min 30 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/remote_maintenance/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/remote_maintenance/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/remote_maintenance/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/remote_maintenance/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Page fully loaded after login",
+      "status": "pass",
+      "screenshot": "artifacts/remote_maintenance/screenshots/05-page-fully-loaded-after-login.png"
+    },
+    {
+      "step": "Switched to tenant SET",
+      "status": "pass",
+      "screenshot": "artifacts/remote_maintenance/screenshots/06-switched-to-tenant-set.png"
+    },
+    {
+      "step": "Remote Maintenance link present for SET",
+      "status": "pass",
+      "details": "Link URL: https://www.pcvisit.de/kundenbereich/downloads/",
+      "screenshot": "artifacts/remote_maintenance/screenshots/07-remote-maintenance-link-present-for-set.png"
+    },
+    {
+      "step": "Switched to tenant SUR",
+      "status": "pass",
+      "screenshot": "artifacts/remote_maintenance/screenshots/08-switched-to-tenant-sur.png"
+    },
+    {
+      "step": "Remote Maintenance link present for SUR",
+      "status": "pass",
+      "details": "Link URL: https://www.pcvisit.de/kundenbereich/downloads/",
+      "screenshot": "artifacts/remote_maintenance/screenshots/09-remote-maintenance-link-present-for-sur.png"
+    },
+    {
+      "step": "Switched to tenant SUD",
+      "status": "pass",
+      "screenshot": "artifacts/remote_maintenance/screenshots/10-switched-to-tenant-sud.png"
+    },
+    {
+      "step": "Remote Maintenance link present for SUD",
+      "status": "pass",
+      "details": "Link URL: https://www.pcvisit.de/kundenbereich/downloads/",
+      "screenshot": "artifacts/remote_maintenance/screenshots/11-remote-maintenance-link-present-for-sud.png"
+    },
+    {
+      "step": "Switched to tenant HAG",
+      "status": "pass",
+      "screenshot": "artifacts/remote_maintenance/screenshots/12-switched-to-tenant-hag.png"
+    },
+    {
+      "step": "Remote Maintenance link present for HAG",
+      "status": "pass",
+      "details": "Link URL: https://www.pcvisit.de/kundenbereich/downloads/",
+      "screenshot": "artifacts/remote_maintenance/screenshots/13-remote-maintenance-link-present-for-hag.png"
+    },
+    {
+      "step": "Switched to tenant HKU",
+      "status": "pass",
+      "screenshot": "artifacts/remote_maintenance/screenshots/14-switched-to-tenant-hku.png"
+    },
+    {
+      "step": "Remote Maintenance link present for HKU",
+      "status": "pass",
+      "details": "Link URL: https://www.pcvisit.de/kundenbereich/downloads/",
+      "screenshot": "artifacts/remote_maintenance/screenshots/15-remote-maintenance-link-present-for-hku.png"
+    },
+    {
+      "step": "Switched to tenant E4R",
+      "status": "pass",
+      "screenshot": "artifacts/remote_maintenance/screenshots/16-switched-to-tenant-e4r.png"
+    },
+    {
+      "step": "Remote Maintenance link present for E4R",
+      "status": "pass",
+      "details": "Link URL: https://www.pcvisit.de/kundenbereich/downloads/",
+      "screenshot": "artifacts/remote_maintenance/screenshots/17-remote-maintenance-link-present-for-e4r.png"
+    },
+    {
+      "step": "Switched to tenant DIV",
+      "status": "pass",
+      "screenshot": "artifacts/remote_maintenance/screenshots/18-switched-to-tenant-div.png"
+    },
+    {
+      "step": "Remote Maintenance link present for DIV",
+      "status": "pass",
+      "details": "Link URL: https://www.pcvisit.de/kundenbereich/downloads/",
+      "screenshot": "artifacts/remote_maintenance/screenshots/19-remote-maintenance-link-present-for-div.png"
+    },
+    {
+      "step": "Final screenshot captured - Remote Maintenance test complete",
+      "status": "pass",
+      "screenshot": "artifacts/remote_maintenance/screenshots/20-final-screenshot-captured-remote-maintenance-test-complete.png"
+    }
+  ],
+  "tenant_results": {
+    "SET": "pass",
+    "SUR": "pass",
+    "SUD": "pass",
+    "HAG": "pass",
+    "HKU": "pass",
+    "E4R": "pass",
+    "DIV": "pass"
+  }
+}

@@ -1,6 +1,11 @@
 {
-  "generated_at": "2026-01-12T04:03:09.319Z",
+  "generated_at": "2026-01-12T04:23:00.874Z",
   "folders": [
+    {
+      "name": "contacts",
+      "json_file": "contacts.json",
+      "video_file": null
+    },
     {
       "name": "create_offer_dehum_e4r",
       "json_file": "create_offer_dehum_e4r.json",
@@ -199,6 +204,16 @@
     {
       "name": "project_lifecycle_sur",
       "json_file": "project_lifecycle_sur.json",
+      "video_file": null
+    },
+    {
+      "name": "remote_maintenance",
+      "json_file": "remote_maintenance.json",
+      "video_file": null
+    },
+    {
+      "name": "tenant_switching",
+      "json_file": "tenant_switching.json",
       "video_file": null
     }
   ]
