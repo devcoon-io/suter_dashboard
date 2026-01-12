@@ -572,8 +572,8 @@ function renderTestsContent(tests){
 
         <div class="steps">
           ${t.test_description ? `<div class="test-description">${escapeHtml(t.test_description)}</div>` : ''}
-          ${videoSrc ? `<div class="video-player" data-video-src="${videoSrc}">
-            <video controls controlsList="nodownload" preload="none"></video>
+          ${videoSrc ? `<div class="video-player">
+            <video controls controlsList="nodownload" preload="metadata" src="${videoSrc}"></video>
           </div>` : ''}
           ${steps.map(s => {
             const st = normalizeStatus(s.status);
@@ -614,10 +614,8 @@ function renderTestsContent(tests){
       if (!isNotTested){
         const videoPlayer = card.querySelector(".video-player");
         const video = videoPlayer ? videoPlayer.querySelector("video") : null;
-        const videoSrcData = videoPlayer ? videoPlayer.dataset.videoSrc : null;
-        let videoLoaded = false;
         
-        if (video && videoSrcData){
+        if (video){
           video.addEventListener("error", () => {
             videoPlayer.innerHTML = `<div class="video-unavailable">VIDEO FILE NOT FOUND</div>`;
           });
@@ -625,18 +623,12 @@ function renderTestsContent(tests){
         
         row.addEventListener("click", (e) => {
           e.stopPropagation();
-          const isExpanding = !card.classList.contains("expanded");
           
           card.classList.toggle("expanded");
           row.setAttribute(
             "aria-expanded",
             card.classList.contains("expanded") ? "true" : "false"
           );
-          
-          if (isExpanding && video && videoSrcData && !videoLoaded){
-            video.src = videoSrcData;
-            videoLoaded = true;
-          }
         });
         
         const screenshotThumbs = card.querySelectorAll(".screenshot-thumb");
