@@ -2,9 +2,9 @@
   "test_name": "Create Potential Project - Hot Water (SET)",
   "test_description": "Creates a new potential project by filling out the form.",
   "test_group": "Potential Project",
-  "started_at": "2026-01-09 11:38:43 UTC",
-  "duration": "00 hr 00 min 20 sec",
-  "overall_status": "fail",
+  "started_at": "2026-01-12 02:54:38 UTC",
+  "duration": "00 hr 00 min 31 sec",
+  "overall_status": "pass",
   "steps": [
     {
       "step": "Login page loaded",
@@ -37,10 +37,34 @@
       "screenshot": "artifacts/potential_project_hotwat_set/screenshots/06-navigated-to-create-opportunity-page.png"
     },
     {
+      "step": "Selected Hot Water from application dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/07-selected-hot-water-from-application-dropdown.png"
+    },
+    {
       "step": "Filled project form fields",
-      "status": "fail",
-      "details": "name 'fill_project_form' is not defined",
-      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/07-filled-project-form-fields.png"
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/08-filled-project-form-fields.png"
+    },
+    {
+      "step": "Selected Project Contact from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/09-selected-project-contact-from-dropdown.png"
+    },
+    {
+      "step": "Clicked Save button",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/10-clicked-save-button.png"
+    },
+    {
+      "step": "Project 'SET_Potential_Project_12_01_02_54_38' created successfully",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/11-project-set-potential-project-12-01-02-54-38-created-successfully.png"
+    },
+    {
+      "step": "Final screenshot captured",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/12-final-screenshot-captured.png"
     }
   ]
 }

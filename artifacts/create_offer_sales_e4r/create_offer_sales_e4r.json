@@ -2,9 +2,9 @@
   "test_name": "Create Proposal Cycle - Sales (E4R)",
   "test_description": "Creates a new offer request by filling out the multi-step form.",
   "test_group": "Create Project (Sales)",
-  "started_at": "2026-01-09 11:03:27 UTC",
-  "duration": "00 hr 01 min 32 sec",
-  "overall_status": "pass",
+  "started_at": "2026-01-12 02:45:17 UTC",
+  "duration": "00 hr 02 min 32 sec",
+  "overall_status": "fail",
   "steps": [
     {
       "step": "Login page loaded",
@@ -73,13 +73,9 @@
     },
     {
       "step": "Offer number appeared",
-      "status": "pass",
+      "status": "fail",
+      "details": "Locator.wait_for: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"h3:has-text(\\\"Offer Nr.:\\\")\").first to be visible\n",
       "screenshot": "artifacts/create_offer_sales_e4r/screenshots/14-offer-number-appeared.png"
-    },
-    {
-      "step": "Final screenshot captured",
-      "status": "pass",
-      "screenshot": "artifacts/create_offer_sales_e4r/screenshots/15-final-screenshot-captured.png"
     }
   ]
 }

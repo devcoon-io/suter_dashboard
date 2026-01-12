@@ -2,8 +2,8 @@
   "test_name": "Logout Test",
   "test_description": "Verifies that a user can successfully log out of the application.",
   "test_group": "Dashboard Functionality",
-  "started_at": "2026-01-09 11:36:21 UTC",
-  "duration": "00 hr 00 min 19 sec",
+  "started_at": "2026-01-12 02:53:50 UTC",
+  "duration": "00 hr 00 min 11 sec",
   "overall_status": "pass",
   "steps": [
     {

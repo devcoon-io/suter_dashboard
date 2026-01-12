@@ -1,0 +1,125 @@
+{
+  "test_name": "Project Lifecycle Workflow (SUD)",
+  "test_description": "Moves a project through all stages: Offered -> Ordered -> Ready -> Active -> Invoicing",
+  "test_group": "Project Lifecycle",
+  "started_at": "2026-01-12 03:15:52 UTC",
+  "duration": "00 hr 01 min 48 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected SUD from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/05-selected-sud-from-dropdown.png"
+    },
+    {
+      "step": "Clicked Projects menu",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/06-clicked-projects-menu.png"
+    },
+    {
+      "step": "Clicked last item in Offered column",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/07-clicked-last-item-in-offered-column.png"
+    },
+    {
+      "step": "Clicked Edit button",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/08-clicked-edit-button.png"
+    },
+    {
+      "step": "Selected Invoice Issuer",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/09-selected-invoice-issuer.png"
+    },
+    {
+      "step": "Clicked Save button",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/10-clicked-save-button.png"
+    },
+    {
+      "step": "Clicked Ordered button",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/11-clicked-ordered-button.png"
+    },
+    {
+      "step": "Completed Ordered checklist",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/12-completed-ordered-checklist.png"
+    },
+    {
+      "step": "Clicked last item in Ordered column",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/13-clicked-last-item-in-ordered-column.png"
+    },
+    {
+      "step": "Clicked Ready button",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/14-clicked-ready-button.png"
+    },
+    {
+      "step": "Completed Ready checklist",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/15-completed-ready-checklist.png"
+    },
+    {
+      "step": "Clicked last item in Ready column",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/16-clicked-last-item-in-ready-column.png"
+    },
+    {
+      "step": "Clicked Active button",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/17-clicked-active-button.png"
+    },
+    {
+      "step": "Completed Active checklist",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/18-completed-active-checklist.png"
+    },
+    {
+      "step": "Clicked last item in Active column",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/19-clicked-last-item-in-active-column.png"
+    },
+    {
+      "step": "Clicked Invoicing button",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/20-clicked-invoicing-button.png"
+    },
+    {
+      "step": "Completed Invoicing checklist",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/21-completed-invoicing-checklist.png"
+    },
+    {
+      "step": "Clicked last item in Invoicing column",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/22-clicked-last-item-in-invoicing-column.png"
+    },
+    {
+      "step": "Project lifecycle complete - Invoicing state verified",
+      "status": "pass",
+      "screenshot": "artifacts/project_lifecycle_sud/screenshots/23-project-lifecycle-complete-invoicing-state-verified.png"
+    }
+  ]
+}

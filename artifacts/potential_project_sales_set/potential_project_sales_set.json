@@ -2,8 +2,9 @@
   "test_name": "Create Potential Project - Sales (SET)",
   "test_description": "Creates a new potential project by filling out the form.",
   "test_group": "Potential Project",
-  "started_at": "2026-01-09 11:39:05 UTC",
-  "overall_status": "fail",
+  "started_at": "2026-01-12 02:55:10 UTC",
+  "duration": "00 hr 00 min 35 sec",
+  "overall_status": "pass",
   "steps": [
     {
       "step": "Login page loaded",
@@ -41,9 +42,9 @@
       "screenshot": "artifacts/potential_project_sales_set/screenshots/07-selected-sales-from-application-dropdown.png"
     },
     {
-      "step": "Project 'SET_Potential_Project_09_01_11_39_05' created successfully",
+      "step": "Project 'SET_Potential_Project_12_01_02_55_10' created successfully",
       "status": "pass",
-      "screenshot": "artifacts/potential_project_sales_set/screenshots/08-project-set-potential-project-09-01-11-39-05-created-successfully.png"
+      "screenshot": "artifacts/potential_project_sales_set/screenshots/08-project-set-potential-project-12-01-02-55-10-created-successfully.png"
     },
     {
       "step": "Filled project form fields",
@@ -61,10 +62,14 @@
       "screenshot": "artifacts/potential_project_sales_set/screenshots/11-clicked-save-button.png"
     },
     {
-      "step": "Verified project 'SET_Potential_Project_09_01_11_39_05' created successfully",
-      "status": "fail",
-      "details": "Locator.wait_for: Timeout 10000ms exceeded.\nCall log:\n  - waiting for locator(\"tbody tr:first-child td.mat-column-subName b\").first to be visible\n",
-      "screenshot": "artifacts/potential_project_sales_set/screenshots/12-verified-project-set-potential-project-09-01-11-39-05-created-successfully.png"
+      "step": "Project 'SET_Potential_Project_12_01_02_55_10' created successfully",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_sales_set/screenshots/12-project-set-potential-project-12-01-02-55-10-created-successfully.png"
+    },
+    {
+      "step": "Final screenshot captured",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_sales_set/screenshots/13-final-screenshot-captured.png"
     }
   ]
 }
