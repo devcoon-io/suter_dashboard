@@ -2,9 +2,9 @@
   "test_name": "Create Proposal Cycle - Dehumidification (E4R)",
   "test_description": "Creates a new offer request by filling out the multi-step form.",
   "test_group": "Create Project (Dehumidification)",
-  "started_at": "2026-01-12 02:35:25 UTC",
-  "duration": "00 hr 02 min 29 sec",
-  "overall_status": "fail",
+  "started_at": "2026-01-12 03:59:27 UTC",
+  "duration": "00 hr 01 min 13 sec",
+  "overall_status": "pass",
   "steps": [
     {
       "step": "Login page loaded",
@@ -57,25 +57,54 @@
       "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/10-clicked-next-button-step-1.png"
     },
     {
+      "step": "Clicked add_circle button to add equipment",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/11-clicked-add-circle-button-to-add-equipment.png"
+    },
+    {
+      "step": "Selected Category: Warm air heaters",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/12-selected-category-warm-air-heaters.png"
+    },
+    {
+      "step": "Selected Group: G 200",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/13-selected-group-g-200.png"
+    },
+    {
+      "step": "Selected Price Class: Mobile warm air heater G200",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/14-selected-price-class-mobile-warm-air-heater-g200.png"
+    },
+    {
+      "step": "Clicked Ok button to add equipment",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/15-clicked-ok-button-to-add-equipment.png"
+    },
+    {
       "step": "Scrolled and clicked Next button (step 2)",
       "status": "pass",
-      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/11-scrolled-and-clicked-next-button-step-2.png"
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/16-scrolled-and-clicked-next-button-step-2.png"
     },
     {
       "step": "Selected customer from dropdown",
       "status": "pass",
-      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/12-selected-customer-from-dropdown.png"
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/17-selected-customer-from-dropdown.png"
     },
     {
       "step": "Clicked Create button",
       "status": "pass",
-      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/13-clicked-create-button.png"
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/18-clicked-create-button.png"
     },
     {
       "step": "Offer number appeared",
-      "status": "fail",
-      "details": "Locator.wait_for: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"h3:has-text(\\\"Offer Nr.:\\\")\").first to be visible\n",
-      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/14-offer-number-appeared.png"
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/19-offer-number-appeared.png"
+    },
+    {
+      "step": "Final screenshot captured",
+      "status": "pass",
+      "screenshot": "artifacts/create_offer_dehum_e4r/screenshots/20-final-screenshot-captured.png"
     }
   ]
 }
