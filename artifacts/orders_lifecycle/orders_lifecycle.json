@@ -2,8 +2,9 @@
   "test_name": "Orders Lifecycle Test",
   "test_description": "Verifies the complete order lifecycle: create, confirm, and deliver an order.",
   "test_group": "Orders",
-  "started_at": "2026-01-13 16:16:18 UTC",
-  "overall_status": "fail",
+  "started_at": "2026-01-13 21:04:46 UTC",
+  "duration": "00 hr 00 min 56 sec",
+  "overall_status": "pass",
   "steps": [
     {
       "step": "Login page loaded",
@@ -76,9 +77,9 @@
       "screenshot": "artifacts/orders_lifecycle/screenshots/14-clicked-create-button.png"
     },
     {
-      "step": "Clicked on top order: 002 - \u00d6ltank 1000l-13.01.26-171646",
+      "step": "Clicked on top order: 002 - \u00d6ltank 1000l-13.01.26-220520",
       "status": "pass",
-      "screenshot": "artifacts/orders_lifecycle/screenshots/15-clicked-on-top-order-002-ltank-1000l-13-01-26-171646.png"
+      "screenshot": "artifacts/orders_lifecycle/screenshots/15-clicked-on-top-order-002-ltank-1000l-13-01-26-220520.png"
     },
     {
       "step": "Clicked Confirm button",
@@ -86,15 +87,34 @@
       "screenshot": "artifacts/orders_lifecycle/screenshots/16-clicked-confirm-button.png"
     },
     {
-      "step": "Clicked on top order again: 002 - \u00d6ltank 1000l-13.01.26-171646",
+      "step": "Clicked on top order again: 002 - \u00d6ltank 1000l-13.01.26-220520",
       "status": "pass",
-      "screenshot": "artifacts/orders_lifecycle/screenshots/17-clicked-on-top-order-again-002-ltank-1000l-13-01-26-171646.png"
+      "screenshot": "artifacts/orders_lifecycle/screenshots/17-clicked-on-top-order-again-002-ltank-1000l-13-01-26-220520.png"
     },
     {
-      "step": "Entered delivered date",
-      "status": "fail",
-      "details": "Locator.wait_for: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"input[formcontrolname=\\\"deliveredAt\\\"]\").first to be visible\n    15 \u00d7 locator resolved to hidden <input matinput=\"\" id=\"mat-input-69\" aria-invalid=\"false\" aria-required=\"false\" _ngcontent-gxo-c475=\"\" aria-haspopup=\"dialog\" formcontrolname=\"deliveredAt\" data-mat-calendar=\"mat-datepicker-24\" class=\"mat-input-element mat-form-field-autofill-control mat-datepicker-input ng-tns-c70-112 ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored\"/>\n",
-      "screenshot": "artifacts/orders_lifecycle/screenshots/18-entered-delivered-date.png"
+      "step": "Entered delivered date (today) via calendar picker",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/18-entered-delivered-date-today-via-calendar-picker.png"
+    },
+    {
+      "step": "Entered amount of tons delivered: 1",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/19-entered-amount-of-tons-delivered-1.png"
+    },
+    {
+      "step": "Clicked Delivered button",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/20-clicked-delivered-button.png"
+    },
+    {
+      "step": "Verified check_circle icon present on delivered order",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/21-verified-check-circle-icon-present-on-delivered-order.png"
+    },
+    {
+      "step": "Final screenshot captured - Orders lifecycle test complete",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/22-final-screenshot-captured-orders-lifecycle-test-complete.png"
     }
   ]
 }
