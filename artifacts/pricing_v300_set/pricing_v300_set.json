@@ -2,10 +2,10 @@
   "test_name": "Pricing Test - Ventilator 300 (SET)",
   "test_description": "Creates a project in SET with Sales application and Test template, then adds Ventilator 300 items to verify pricing.",
   "test_group": "Pricelist Validation",
-  "started_at": "2026-01-13 13:26:02 UTC",
-  "duration": "00 hr 02 min 09 sec",
-  "video_file": "9082438289773f3e4fbcd2a6418ab313.webm",
-  "overall_status": "fail",
+  "started_at": "2026-01-13 16:01:48 UTC",
+  "duration": "00 hr 01 min 01 sec",
+  "video_file": "60bc807ee3e51ea57e74f4499025b000.webm",
+  "overall_status": "pass",
   "steps": [
     {
       "step": "Login page loaded",
@@ -88,80 +88,49 @@
       "screenshot": "artifacts/pricing_v300_set/screenshots/16-clicked-ok-button-to-add-item.png"
     },
     {
-      "step": "Price test: 1 days = 27.0 CHF (expected 27.0)",
+      "step": "Set days to 76 to display all price tiers",
       "status": "pass",
-      "screenshot": "artifacts/pricing_v300_set/screenshots/17-price-test-1-days-27-0-chf-expected-27-0.png"
+      "screenshot": "artifacts/pricing_v300_set/screenshots/17-set-days-to-76-to-display-all-price-tiers.png"
     },
     {
-      "step": "Price test: 15 days = 15.0 CHF (expected 27.0)",
-      "status": "fail",
-      "details": "Mismatch",
-      "screenshot": "artifacts/pricing_v300_set/screenshots/18-price-test-15-days-15-0-chf-expected-27-0.png"
+      "step": "Tier 1: 27.00 CHF/Unit (expected 27.00)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_v300_set/screenshots/18-tier-1-27-00-chf-unit-expected-27-00.png"
     },
     {
-      "step": "Price test: 16 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_v300_set/screenshots/19-price-test-16-days.png"
+      "step": "Tier 2: 25.00 CHF/Unit (expected 25.00)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_v300_set/screenshots/19-tier-2-25-00-chf-unit-expected-25-00.png"
     },
     {
-      "step": "Price test: 30 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_v300_set/screenshots/20-price-test-30-days.png"
+      "step": "Tier 3: 23.00 CHF/Unit (expected 23.00)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_v300_set/screenshots/20-tier-3-23-00-chf-unit-expected-23-00.png"
     },
     {
-      "step": "Price test: 31 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_v300_set/screenshots/21-price-test-31-days.png"
+      "step": "Tier 4: 21.00 CHF/Unit (expected 21.00)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_v300_set/screenshots/21-tier-4-21-00-chf-unit-expected-21-00.png"
     },
     {
-      "step": "Price test: 45 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_v300_set/screenshots/22-price-test-45-days.png"
+      "step": "Tier 5: 20.00 CHF/Unit (expected 20.00)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_v300_set/screenshots/22-tier-5-20-00-chf-unit-expected-20-00.png"
     },
     {
-      "step": "Price test: 46 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_v300_set/screenshots/23-price-test-46-days.png"
+      "step": "Tier 6: 19.00 CHF/Unit (expected 19.00)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_v300_set/screenshots/23-tier-6-19-00-chf-unit-expected-19-00.png"
     },
     {
-      "step": "Price test: 60 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_v300_set/screenshots/24-price-test-60-days.png"
-    },
-    {
-      "step": "Price test: 61 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_v300_set/screenshots/25-price-test-61-days.png"
-    },
-    {
-      "step": "Price test: 75 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_v300_set/screenshots/26-price-test-75-days.png"
-    },
-    {
-      "step": "Price test: 76 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_v300_set/screenshots/27-price-test-76-days.png"
-    },
-    {
-      "step": "Price test: 80 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_v300_set/screenshots/28-price-test-80-days.png"
+      "step": "All 6 price tiers validated successfully",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_v300_set/screenshots/24-all-6-price-tiers-validated-successfully.png"
     },
     {
       "step": "Final screenshot captured - Pricing test complete",
       "status": "pass",
-      "screenshot": "artifacts/pricing_v300_set/screenshots/29-final-screenshot-captured-pricing-test-complete.png"
+      "screenshot": "artifacts/pricing_v300_set/screenshots/25-final-screenshot-captured-pricing-test-complete.png"
     }
   ]
 }

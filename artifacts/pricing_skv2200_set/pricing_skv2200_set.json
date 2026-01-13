@@ -2,10 +2,10 @@
   "test_name": "Pricing Test - Side channel blower 2200 (SET)",
   "test_description": "Creates a project in SET with Sales application and Test template, then adds Side channel blower 2200 items to verify pricing.",
   "test_group": "Pricelist Validation",
-  "started_at": "2026-01-13 13:19:30 UTC",
-  "duration": "00 hr 02 min 11 sec",
-  "video_file": "f062de01cc0ffa0f1d4be52c8d81d2a1.webm",
-  "overall_status": "fail",
+  "started_at": "2026-01-13 15:58:39 UTC",
+  "duration": "00 hr 01 min 04 sec",
+  "video_file": "801c104b22a051c658f342ed7891d5f7.webm",
+  "overall_status": "pass",
   "steps": [
     {
       "step": "Login page loaded",
@@ -88,80 +88,49 @@
       "screenshot": "artifacts/pricing_skv2200_set/screenshots/16-clicked-ok-button-to-add-item.png"
     },
     {
-      "step": "Price test: 1 days = 65.0 CHF (expected 65.0)",
+      "step": "Set days to 76 to display all price tiers",
       "status": "pass",
-      "screenshot": "artifacts/pricing_skv2200_set/screenshots/17-price-test-1-days-65-0-chf-expected-65-0.png"
+      "screenshot": "artifacts/pricing_skv2200_set/screenshots/17-set-days-to-76-to-display-all-price-tiers.png"
     },
     {
-      "step": "Price test: 15 days = 15.0 CHF (expected 65.0)",
-      "status": "fail",
-      "details": "Mismatch",
-      "screenshot": "artifacts/pricing_skv2200_set/screenshots/18-price-test-15-days-15-0-chf-expected-65-0.png"
+      "step": "Tier 1: 65.00 CHF/Unit (expected 65.00)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv2200_set/screenshots/18-tier-1-65-00-chf-unit-expected-65-00.png"
     },
     {
-      "step": "Price test: 16 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_skv2200_set/screenshots/19-price-test-16-days.png"
+      "step": "Tier 2: 61.00 CHF/Unit (expected 61.00)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv2200_set/screenshots/19-tier-2-61-00-chf-unit-expected-61-00.png"
     },
     {
-      "step": "Price test: 30 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_skv2200_set/screenshots/20-price-test-30-days.png"
+      "step": "Tier 3: 58.00 CHF/Unit (expected 58.00)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv2200_set/screenshots/20-tier-3-58-00-chf-unit-expected-58-00.png"
     },
     {
-      "step": "Price test: 31 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_skv2200_set/screenshots/21-price-test-31-days.png"
+      "step": "Tier 4: 55.00 CHF/Unit (expected 55.00)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv2200_set/screenshots/21-tier-4-55-00-chf-unit-expected-55-00.png"
     },
     {
-      "step": "Price test: 45 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_skv2200_set/screenshots/22-price-test-45-days.png"
+      "step": "Tier 5: 52.00 CHF/Unit (expected 52.00)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv2200_set/screenshots/22-tier-5-52-00-chf-unit-expected-52-00.png"
     },
     {
-      "step": "Price test: 46 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_skv2200_set/screenshots/23-price-test-46-days.png"
+      "step": "Tier 6: 49.00 CHF/Unit (expected 49.00)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv2200_set/screenshots/23-tier-6-49-00-chf-unit-expected-49-00.png"
     },
     {
-      "step": "Price test: 60 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_skv2200_set/screenshots/24-price-test-60-days.png"
-    },
-    {
-      "step": "Price test: 61 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_skv2200_set/screenshots/25-price-test-61-days.png"
-    },
-    {
-      "step": "Price test: 75 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_skv2200_set/screenshots/26-price-test-75-days.png"
-    },
-    {
-      "step": "Price test: 76 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_skv2200_set/screenshots/27-price-test-76-days.png"
-    },
-    {
-      "step": "Price test: 80 days",
-      "status": "fail",
-      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
-      "screenshot": "artifacts/pricing_skv2200_set/screenshots/28-price-test-80-days.png"
+      "step": "All 6 price tiers validated successfully",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv2200_set/screenshots/24-all-6-price-tiers-validated-successfully.png"
     },
     {
       "step": "Final screenshot captured - Pricing test complete",
       "status": "pass",
-      "screenshot": "artifacts/pricing_skv2200_set/screenshots/29-final-screenshot-captured-pricing-test-complete.png"
+      "screenshot": "artifacts/pricing_skv2200_set/screenshots/25-final-screenshot-captured-pricing-test-complete.png"
     }
   ]
 }
