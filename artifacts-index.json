@@ -1,6 +1,11 @@
 {
-  "generated_at": "2026-01-13T10:02:13.254Z",
+  "generated_at": "2026-01-13T10:10:24.750Z",
   "folders": [
+    {
+      "name": "contacts",
+      "json_file": "contacts.json",
+      "video_file": null
+    },
     {
       "name": "create_offer_dehum_e4r",
       "json_file": "create_offer_dehum_e4r.json",
@@ -132,11 +137,6 @@
       "video_file": null
     },
     {
-      "name": "orders_lifecycle",
-      "json_file": "orders_lifecycle.json",
-      "video_file": "15412e7a957c7cacb020cc9e85aec3e4.webm"
-    },
-    {
       "name": "potential_project_dehum_set",
       "json_file": "potential_project_dehum_set.json",
       "video_file": null
@@ -199,6 +199,16 @@
     {
       "name": "project_lifecycle_sur",
       "json_file": "project_lifecycle_sur.json",
+      "video_file": null
+    },
+    {
+      "name": "remote_maintenance",
+      "json_file": "remote_maintenance.json",
+      "video_file": null
+    },
+    {
+      "name": "tenant_switching",
+      "json_file": "tenant_switching.json",
       "video_file": null
     }
   ]

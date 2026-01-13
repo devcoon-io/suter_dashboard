@@ -1,0 +1,126 @@
+{
+  "test_name": "Contacts Verification Test",
+  "test_description": "Verifies that contact information (Email, Phone, Platform) is present for all tenants.",
+  "test_group": "Dashboard Functionality",
+  "started_at": "2026-01-13 10:07:14 UTC",
+  "duration": "00 hr 00 min 32 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/contacts/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/contacts/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/contacts/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/contacts/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Page fully loaded after login",
+      "status": "pass",
+      "screenshot": "artifacts/contacts/screenshots/05-page-fully-loaded-after-login.png"
+    },
+    {
+      "step": "Switched to tenant SET",
+      "status": "pass",
+      "screenshot": "artifacts/contacts/screenshots/06-switched-to-tenant-set.png"
+    },
+    {
+      "step": "Contacts present for SET",
+      "status": "pass",
+      "details": "All contacts found: Email=support@sutergruppe.ch, Phone=+41 44 743 51 50, Platform=sutergruppe.atlassian.net",
+      "screenshot": "artifacts/contacts/screenshots/07-contacts-present-for-set.png"
+    },
+    {
+      "step": "Switched to tenant SUR",
+      "status": "pass",
+      "screenshot": "artifacts/contacts/screenshots/08-switched-to-tenant-sur.png"
+    },
+    {
+      "step": "Contacts present for SUR",
+      "status": "pass",
+      "details": "All contacts found: Email=support@sutergruppe.ch, Phone=+41 44 743 51 50, Platform=sutergruppe.atlassian.net",
+      "screenshot": "artifacts/contacts/screenshots/09-contacts-present-for-sur.png"
+    },
+    {
+      "step": "Switched to tenant SUD",
+      "status": "pass",
+      "screenshot": "artifacts/contacts/screenshots/10-switched-to-tenant-sud.png"
+    },
+    {
+      "step": "Contacts present for SUD",
+      "status": "pass",
+      "details": "All contacts found: Email=support@sutergruppe.ch, Phone=+41 44 743 51 50, Platform=sutergruppe.atlassian.net",
+      "screenshot": "artifacts/contacts/screenshots/11-contacts-present-for-sud.png"
+    },
+    {
+      "step": "Switched to tenant HAG",
+      "status": "pass",
+      "screenshot": "artifacts/contacts/screenshots/12-switched-to-tenant-hag.png"
+    },
+    {
+      "step": "Contacts present for HAG",
+      "status": "pass",
+      "details": "All contacts found: Email=support@sutergruppe.ch, Phone=+41 44 743 51 50, Platform=sutergruppe.atlassian.net",
+      "screenshot": "artifacts/contacts/screenshots/13-contacts-present-for-hag.png"
+    },
+    {
+      "step": "Switched to tenant HKU",
+      "status": "pass",
+      "screenshot": "artifacts/contacts/screenshots/14-switched-to-tenant-hku.png"
+    },
+    {
+      "step": "Contacts present for HKU",
+      "status": "pass",
+      "details": "All contacts found: Email=support@sutergruppe.ch, Phone=+41 44 743 51 50, Platform=sutergruppe.atlassian.net",
+      "screenshot": "artifacts/contacts/screenshots/15-contacts-present-for-hku.png"
+    },
+    {
+      "step": "Switched to tenant E4R",
+      "status": "pass",
+      "screenshot": "artifacts/contacts/screenshots/16-switched-to-tenant-e4r.png"
+    },
+    {
+      "step": "Contacts present for E4R",
+      "status": "pass",
+      "details": "All contacts found: Email=support@sutergruppe.ch, Phone=+41 44 743 51 50, Platform=sutergruppe.atlassian.net",
+      "screenshot": "artifacts/contacts/screenshots/17-contacts-present-for-e4r.png"
+    },
+    {
+      "step": "Switched to tenant DIV",
+      "status": "pass",
+      "screenshot": "artifacts/contacts/screenshots/18-switched-to-tenant-div.png"
+    },
+    {
+      "step": "Contacts present for DIV",
+      "status": "pass",
+      "details": "All contacts found: Email=support@sutergruppe.ch, Phone=+41 44 743 51 50, Platform=sutergruppe.atlassian.net",
+      "screenshot": "artifacts/contacts/screenshots/19-contacts-present-for-div.png"
+    },
+    {
+      "step": "Final screenshot captured - Contacts test complete",
+      "status": "pass",
+      "screenshot": "artifacts/contacts/screenshots/20-final-screenshot-captured-contacts-test-complete.png"
+    }
+  ],
+  "tenant_results": {
+    "SET": "pass",
+    "SUR": "pass",
+    "SUD": "pass",
+    "HAG": "pass",
+    "HKU": "pass",
+    "E4R": "pass",
+    "DIV": "pass"
+  }
+}
