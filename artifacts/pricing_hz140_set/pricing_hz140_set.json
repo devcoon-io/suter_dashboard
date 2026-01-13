@@ -1,0 +1,156 @@
+{
+  "test_name": "Pricing Test - HZ 140 kW (SET)",
+  "test_description": "Creates a project in SET with Sales application and Test template, then adds HZ 140 kW items to verify pricing at different rental period boundaries.",
+  "test_group": "Pricelist Validation",
+  "started_at": "2026-01-13 12:42:53 UTC",
+  "duration": "00 hr 01 min 38 sec",
+  "video_file": "cd72bfa9ddb3d19f4794305c5ac3c3d8.webm",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected SET from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/05-selected-set-from-dropdown.png"
+    },
+    {
+      "step": "Clicked Projects menu",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/06-clicked-projects-menu.png"
+    },
+    {
+      "step": "Clicked Proposal tab",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/07-clicked-proposal-tab.png"
+    },
+    {
+      "step": "Selected Sales from application dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/08-selected-sales-from-application-dropdown.png"
+    },
+    {
+      "step": "Selected Test from template dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/09-selected-test-from-template-dropdown.png"
+    },
+    {
+      "step": "Filled project form fields",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/10-filled-project-form-fields.png"
+    },
+    {
+      "step": "Clicked Next button (step 1)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/11-clicked-next-button-step-1.png"
+    },
+    {
+      "step": "Clicked add_circle button to add items",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/12-clicked-add-circle-button-to-add-items.png"
+    },
+    {
+      "step": "Selected Category: Warm water heaters",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/13-selected-category-warm-water-heaters.png"
+    },
+    {
+      "step": "Selected Group: HZ 140",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/14-selected-group-hz-140.png"
+    },
+    {
+      "step": "Selected Price Class: HZ 140 kW",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/15-selected-price-class-hz-140-kw.png"
+    },
+    {
+      "step": "Clicked Ok button to add item",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/16-clicked-ok-button-to-add-item.png"
+    },
+    {
+      "step": "Price test: 1 days = 180.0 CHF (expected 180.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/17-price-test-1-days-180-0-chf-expected-180-0.png"
+    },
+    {
+      "step": "Price test: 10 days = 180.0 CHF (expected 180.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/18-price-test-10-days-180-0-chf-expected-180-0.png"
+    },
+    {
+      "step": "Price test: 11 days = 151.0 CHF (expected 151.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/19-price-test-11-days-151-0-chf-expected-151-0.png"
+    },
+    {
+      "step": "Price test: 30 days = 151.0 CHF (expected 151.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/20-price-test-30-days-151-0-chf-expected-151-0.png"
+    },
+    {
+      "step": "Price test: 31 days = 122.0 CHF (expected 122.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/21-price-test-31-days-122-0-chf-expected-122-0.png"
+    },
+    {
+      "step": "Price test: 90 days = 122.0 CHF (expected 122.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/22-price-test-90-days-122-0-chf-expected-122-0.png"
+    },
+    {
+      "step": "Price test: 91 days = 115.0 CHF (expected 115.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/23-price-test-91-days-115-0-chf-expected-115-0.png"
+    },
+    {
+      "step": "Price test: 180 days = 115.0 CHF (expected 115.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/24-price-test-180-days-115-0-chf-expected-115-0.png"
+    },
+    {
+      "step": "Price test: 181 days = 107.0 CHF (expected 107.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/25-price-test-181-days-107-0-chf-expected-107-0.png"
+    },
+    {
+      "step": "Price test: 360 days = 107.0 CHF (expected 107.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/26-price-test-360-days-107-0-chf-expected-107-0.png"
+    },
+    {
+      "step": "Price test: 361 days = 94.0 CHF (expected 94.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/27-price-test-361-days-94-0-chf-expected-94-0.png"
+    },
+    {
+      "step": "Price test: 365 days = 94.0 CHF (expected 94.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/28-price-test-365-days-94-0-chf-expected-94-0.png"
+    },
+    {
+      "step": "Final screenshot captured - Pricing test complete",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_hz140_set/screenshots/29-final-screenshot-captured-pricing-test-complete.png"
+    }
+  ]
+}

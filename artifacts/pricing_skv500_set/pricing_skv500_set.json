@@ -1,0 +1,167 @@
+{
+  "test_name": "Pricing Test - Side channel blower 500 (SET)",
+  "test_description": "Creates a project in SET with Sales application and Test template, then adds Side channel blower 500 items to verify pricing.",
+  "test_group": "Pricelist Validation",
+  "started_at": "2026-01-13 13:12:57 UTC",
+  "duration": "00 hr 02 min 10 sec",
+  "video_file": "860b13faaf0b1f9bc4440c9b24f0e371.webm",
+  "overall_status": "fail",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected SET from dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/05-selected-set-from-dropdown.png"
+    },
+    {
+      "step": "Clicked Projects menu",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/06-clicked-projects-menu.png"
+    },
+    {
+      "step": "Clicked Proposal tab",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/07-clicked-proposal-tab.png"
+    },
+    {
+      "step": "Selected Sales from application dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/08-selected-sales-from-application-dropdown.png"
+    },
+    {
+      "step": "Selected Test from template dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/09-selected-test-from-template-dropdown.png"
+    },
+    {
+      "step": "Filled project form fields",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/10-filled-project-form-fields.png"
+    },
+    {
+      "step": "Clicked Next button (step 1)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/11-clicked-next-button-step-1.png"
+    },
+    {
+      "step": "Clicked add_circle button to add items",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/12-clicked-add-circle-button-to-add-items.png"
+    },
+    {
+      "step": "Selected Category: Dehumidification",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/13-selected-category-dehumidification.png"
+    },
+    {
+      "step": "Selected Group: SKV 500",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/14-selected-group-skv-500.png"
+    },
+    {
+      "step": "Selected Price Class: Side channel blower 500",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/15-selected-price-class-side-channel-blower-500.png"
+    },
+    {
+      "step": "Clicked Ok button to add item",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/16-clicked-ok-button-to-add-item.png"
+    },
+    {
+      "step": "Price test: 1 days = 30.0 CHF (expected 30.0)",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/17-price-test-1-days-30-0-chf-expected-30-0.png"
+    },
+    {
+      "step": "Price test: 15 days = 15.0 CHF (expected 30.0)",
+      "status": "fail",
+      "details": "Mismatch",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/18-price-test-15-days-15-0-chf-expected-30-0.png"
+    },
+    {
+      "step": "Price test: 16 days",
+      "status": "fail",
+      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/19-price-test-16-days.png"
+    },
+    {
+      "step": "Price test: 30 days",
+      "status": "fail",
+      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/20-price-test-30-days.png"
+    },
+    {
+      "step": "Price test: 31 days",
+      "status": "fail",
+      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/21-price-test-31-days.png"
+    },
+    {
+      "step": "Price test: 45 days",
+      "status": "fail",
+      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/22-price-test-45-days.png"
+    },
+    {
+      "step": "Price test: 46 days",
+      "status": "fail",
+      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/23-price-test-46-days.png"
+    },
+    {
+      "step": "Price test: 60 days",
+      "status": "fail",
+      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/24-price-test-60-days.png"
+    },
+    {
+      "step": "Price test: 61 days",
+      "status": "fail",
+      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/25-price-test-61-days.png"
+    },
+    {
+      "step": "Price test: 75 days",
+      "status": "fail",
+      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/26-price-test-75-days.png"
+    },
+    {
+      "step": "Price test: 76 days",
+      "status": "fail",
+      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/27-price-test-76-days.png"
+    },
+    {
+      "step": "Price test: 80 days",
+      "status": "fail",
+      "details": "Locator.text_content: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"text=/^\\\\d{1,2}\\\\.\\\\d{2}$/\").first\n",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/28-price-test-80-days.png"
+    },
+    {
+      "step": "Final screenshot captured - Pricing test complete",
+      "status": "pass",
+      "screenshot": "artifacts/pricing_skv500_set/screenshots/29-final-screenshot-captured-pricing-test-complete.png"
+    }
+  ]
+}

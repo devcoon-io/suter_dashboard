@@ -2,8 +2,8 @@
   "test_name": "Create Potential Project - Warm Air (SET)",
   "test_description": "Creates a new potential project by filling out the form.",
   "test_group": "Potential Project",
-  "started_at": "2026-01-13 09:14:36 UTC",
-  "duration": "00 hr 00 min 29 sec",
+  "started_at": "2026-01-13 11:06:32 UTC",
+  "duration": "00 hr 00 min 43 sec",
   "overall_status": "pass",
   "steps": [
     {
@@ -57,14 +57,24 @@
       "screenshot": "artifacts/potential_project_warmair_set/screenshots/10-clicked-save-button.png"
     },
     {
-      "step": "Project 'SET_Potential_Project_13_01_09_14_36' created successfully",
+      "step": "Clicked Save button successfully",
       "status": "pass",
-      "screenshot": "artifacts/potential_project_warmair_set/screenshots/11-project-set-potential-project-13-01-09-14-36-created-successfully.png"
+      "screenshot": "artifacts/potential_project_warmair_set/screenshots/11-clicked-save-button-successfully.png"
+    },
+    {
+      "step": "Navigated to Potential Project list",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_warmair_set/screenshots/12-navigated-to-potential-project-list.png"
+    },
+    {
+      "step": "Verified project 'SET_Potential_Project_13_01_11_06_33' appears in Potential Project list",
+      "status": "pass",
+      "screenshot": "artifacts/potential_project_warmair_set/screenshots/13-verified-project-set-potential-project-13-01-11-06-33-appears-in-potential-project-list.png"
     },
     {
       "step": "Final screenshot captured",
       "status": "pass",
-      "screenshot": "artifacts/potential_project_warmair_set/screenshots/12-final-screenshot-captured.png"
+      "screenshot": "artifacts/potential_project_warmair_set/screenshots/14-final-screenshot-captured.png"
     }
   ]
 }

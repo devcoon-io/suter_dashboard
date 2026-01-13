@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-13T10:10:24.750Z",
+  "generated_at": "2026-01-13T13:45:07.996Z",
   "folders": [
     {
       "name": "contacts",
@@ -137,6 +137,11 @@
       "video_file": null
     },
     {
+      "name": "orders_lifecycle",
+      "json_file": "orders_lifecycle.json",
+      "video_file": "cbd07268f0de2b93099c6e352ccd5861.webm"
+    },
+    {
       "name": "potential_project_dehum_set",
       "json_file": "potential_project_dehum_set.json",
       "video_file": null
@@ -157,14 +162,109 @@
       "video_file": null
     },
     {
+      "name": "pricing_ad10_set",
+      "json_file": "pricing_ad10_set.json",
+      "video_file": "d24e038965cd4d6fde06a1d7bda30e4c.webm"
+    },
+    {
+      "name": "pricing_ad15_set",
+      "json_file": "pricing_ad15_set.json",
+      "video_file": "311279e2c754298007c09db84d9500be.webm"
+    },
+    {
+      "name": "pricing_ad22_set",
+      "json_file": "pricing_ad22_set.json",
+      "video_file": "7d52a73322143052b8e0e458affbfccd.webm"
+    },
+    {
+      "name": "pricing_ad55_set",
+      "json_file": "pricing_ad55_set.json",
+      "video_file": "c2503068df3db300e12a0e5e14a74f94.webm"
+    },
+    {
+      "name": "pricing_en280_set",
+      "json_file": "pricing_en280_set.json",
+      "video_file": "11ceaf79f06afdd44cae8da1a65cd7ca.webm"
+    },
+    {
+      "name": "pricing_en400_set",
+      "json_file": "pricing_en400_set.json",
+      "video_file": "0efaf651f56bb9c81b95265a174e157d.webm"
+    },
+    {
+      "name": "pricing_en900_set",
+      "json_file": "pricing_en900_set.json",
+      "video_file": "96cdfe3b7fe010359843eb9cca2d6439.webm"
+    },
+    {
       "name": "pricing_g200_set",
       "json_file": "pricing_g200_set.json",
       "video_file": null
     },
     {
+      "name": "pricing_hw420_set",
+      "json_file": "pricing_hw420_set.json",
+      "video_file": "437e74a68e94718bdde716f96d7137fc.webm"
+    },
+    {
+      "name": "pricing_hw600_set",
+      "json_file": "pricing_hw600_set.json",
+      "video_file": "09698a6fc8cd81613ff9a3e4d9c968ee.webm"
+    },
+    {
+      "name": "pricing_hw800_set",
+      "json_file": "pricing_hw800_set.json",
+      "video_file": "8e0c97d6d1d97689f620718a8e3d99d3.webm"
+    },
+    {
+      "name": "pricing_hz105_hybrid_ww_set",
+      "json_file": "pricing_hz105_hybrid_ww_set.json",
+      "video_file": "80dd9352404e80cfa48b2b8256374762.webm"
+    },
+    {
       "name": "pricing_hz105_set",
       "json_file": "pricing_hz105_set.json",
       "video_file": null
+    },
+    {
+      "name": "pricing_hz140_set",
+      "json_file": "pricing_hz140_set.json",
+      "video_file": null
+    },
+    {
+      "name": "pricing_hz210_set",
+      "json_file": "pricing_hz210_set.json",
+      "video_file": null
+    },
+    {
+      "name": "pricing_hz280_set",
+      "json_file": "pricing_hz280_set.json",
+      "video_file": null
+    },
+    {
+      "name": "pricing_hz450_set",
+      "json_file": "pricing_hz450_set.json",
+      "video_file": null
+    },
+    {
+      "name": "pricing_hz480_set",
+      "json_file": "pricing_hz480_set.json",
+      "video_file": null
+    },
+    {
+      "name": "pricing_hz60_set",
+      "json_file": "pricing_hz60_set.json",
+      "video_file": null
+    },
+    {
+      "name": "pricing_hz90_set",
+      "json_file": "pricing_hz90_set.json",
+      "video_file": null
+    },
+    {
+      "name": "pricing_hz90_trailer_set",
+      "json_file": "pricing_hz90_trailer_set.json",
+      "video_file": "c6eef38cb3012da229af2f9295ddfd58.webm"
     },
     {
       "name": "pricing_s100_set",
@@ -175,6 +275,46 @@
       "name": "pricing_s50_set",
       "json_file": "pricing_s50_set.json",
       "video_file": null
+    },
+    {
+      "name": "pricing_skv1100_set",
+      "json_file": "pricing_skv1100_set.json",
+      "video_file": "6b514a38ca4fd218656273014c5f70c0.webm"
+    },
+    {
+      "name": "pricing_skv2200_set",
+      "json_file": "pricing_skv2200_set.json",
+      "video_file": "f062de01cc0ffa0f1d4be52c8d81d2a1.webm"
+    },
+    {
+      "name": "pricing_skv500_set",
+      "json_file": "pricing_skv500_set.json",
+      "video_file": "860b13faaf0b1f9bc4440c9b24f0e371.webm"
+    },
+    {
+      "name": "pricing_skv800_set",
+      "json_file": "pricing_skv800_set.json",
+      "video_file": "9dedb6352e141ef7a8cd3bb1bdee2303.webm"
+    },
+    {
+      "name": "pricing_v100_set",
+      "json_file": "pricing_v100_set.json",
+      "video_file": "10405295b9fe4658a442ec7d372249ad.webm"
+    },
+    {
+      "name": "pricing_v300_set",
+      "json_file": "pricing_v300_set.json",
+      "video_file": "9082438289773f3e4fbcd2a6418ab313.webm"
+    },
+    {
+      "name": "pricing_v40_set",
+      "json_file": "pricing_v40_set.json",
+      "video_file": "c5b792286f64ceeeadb7eea90bf22777.webm"
+    },
+    {
+      "name": "pricing_v500_set",
+      "json_file": "pricing_v500_set.json",
+      "video_file": "7d4678485871badaed70a4be7d756a19.webm"
     },
     {
       "name": "project_lifecycle_e4r",
