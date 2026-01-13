@@ -2,8 +2,8 @@
   "test_name": "Create Potential Project - Sales (SET)",
   "test_description": "Creates a new potential project by filling out the form.",
   "test_group": "Potential Project",
-  "started_at": "2026-01-12 02:55:10 UTC",
-  "duration": "00 hr 00 min 35 sec",
+  "started_at": "2026-01-13 09:14:05 UTC",
+  "duration": "00 hr 00 min 31 sec",
   "overall_status": "pass",
   "steps": [
     {
@@ -42,9 +42,9 @@
       "screenshot": "artifacts/potential_project_sales_set/screenshots/07-selected-sales-from-application-dropdown.png"
     },
     {
-      "step": "Project 'SET_Potential_Project_12_01_02_55_10' created successfully",
+      "step": "Project 'SET_Potential_Project_13_01_09_14_05' created successfully",
       "status": "pass",
-      "screenshot": "artifacts/potential_project_sales_set/screenshots/08-project-set-potential-project-12-01-02-55-10-created-successfully.png"
+      "screenshot": "artifacts/potential_project_sales_set/screenshots/08-project-set-potential-project-13-01-09-14-05-created-successfully.png"
     },
     {
       "step": "Filled project form fields",
@@ -62,9 +62,9 @@
       "screenshot": "artifacts/potential_project_sales_set/screenshots/11-clicked-save-button.png"
     },
     {
-      "step": "Project 'SET_Potential_Project_12_01_02_55_10' created successfully",
+      "step": "Project 'SET_Potential_Project_13_01_09_14_05' created successfully",
       "status": "pass",
-      "screenshot": "artifacts/potential_project_sales_set/screenshots/12-project-set-potential-project-12-01-02-55-10-created-successfully.png"
+      "screenshot": "artifacts/potential_project_sales_set/screenshots/12-project-set-potential-project-13-01-09-14-05-created-successfully.png"
     },
     {
       "step": "Final screenshot captured",

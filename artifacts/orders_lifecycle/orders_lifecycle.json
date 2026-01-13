@@ -1,0 +1,85 @@
+{
+  "test_name": "Orders Lifecycle Test",
+  "test_description": "Verifies the complete order lifecycle: create, confirm, and deliver an order.",
+  "test_group": "Orders",
+  "started_at": "2026-01-12 05:00:24 UTC",
+  "overall_status": "fail",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Page fully loaded after login",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/05-page-fully-loaded-after-login.png"
+    },
+    {
+      "step": "Selected SET tenant",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/06-selected-set-tenant.png"
+    },
+    {
+      "step": "Clicked Projects menu",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/07-clicked-projects-menu.png"
+    },
+    {
+      "step": "Clicked Orders submenu",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/08-clicked-orders-submenu.png"
+    },
+    {
+      "step": "Selected 'all' from status dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/09-selected-all-from-status-dropdown.png"
+    },
+    {
+      "step": "Clicked Add button",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/10-clicked-add-button.png"
+    },
+    {
+      "step": "Selected Silo/Tank option",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/11-selected-silo-tank-option.png"
+    },
+    {
+      "step": "Entered planned delivery date: 19.01.2026",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/12-entered-planned-delivery-date-19-01-2026.png"
+    },
+    {
+      "step": "Entered amount of tons: 1",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/13-entered-amount-of-tons-1.png"
+    },
+    {
+      "step": "Clicked Create button",
+      "status": "pass",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/14-clicked-create-button.png"
+    },
+    {
+      "step": "Clicked on top order",
+      "status": "fail",
+      "details": "Locator.wait_for: Timeout 10000ms exceeded.\nCall log:\n  - waiting for locator(\"td.mat-column-number a\").first to be visible\n",
+      "screenshot": "artifacts/orders_lifecycle/screenshots/15-clicked-on-top-order.png"
+    }
+  ]
+}

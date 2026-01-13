@@ -2,8 +2,8 @@
   "test_name": "G200 Equipment Connectivity Test",
   "test_description": "Verifies that G200 warm air equipment is communicating with the dashboard by checking offline device percentage.",
   "test_group": "Equipment Connectivity",
-  "started_at": "2026-01-09 17:37:34 UTC",
-  "duration": "00 hr 00 min 37 sec",
+  "started_at": "2026-01-12 07:42:01 UTC",
+  "duration": "00 hr 00 min 33 sec",
   "overall_status": "pass",
   "steps": [
     {

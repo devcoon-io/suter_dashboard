@@ -2,8 +2,8 @@
   "test_name": "Create Proposal Cycle - Sales (E4R)",
   "test_description": "Creates a new offer request by filling out the multi-step form.",
   "test_group": "Create Project (Sales)",
-  "started_at": "2026-01-12 03:57:25 UTC",
-  "duration": "00 hr 01 min 14 sec",
+  "started_at": "2026-01-13 09:07:28 UTC",
+  "duration": "00 hr 01 min 15 sec",
   "overall_status": "pass",
   "steps": [
     {
