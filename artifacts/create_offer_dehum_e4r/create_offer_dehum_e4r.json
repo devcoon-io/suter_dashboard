@@ -2,8 +2,8 @@
   "test_name": "Create Proposal Cycle - Dehumidification (E4R)",
   "test_description": "Creates a new offer request by filling out the multi-step form.",
   "test_group": "Create Project (Dehumidification)",
-  "started_at": "2026-01-13 09:00:08 UTC",
-  "duration": "00 hr 01 min 15 sec",
+  "started_at": "2026-01-14 10:08:53 UTC",
+  "duration": "00 hr 01 min 14 sec",
   "overall_status": "pass",
   "steps": [
     {

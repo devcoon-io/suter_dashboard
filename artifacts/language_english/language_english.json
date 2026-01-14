@@ -2,7 +2,7 @@
   "test_name": "Language Change Test - English (EN)",
   "test_description": "Verifies that a user can successfully change the language to English.",
   "test_group": "Dashboard Functionality",
-  "started_at": "2026-01-13 09:12:30 UTC",
+  "started_at": "2026-01-14 10:21:07 UTC",
   "duration": "00 hr 00 min 20 sec",
   "overall_status": "pass",
   "steps": [

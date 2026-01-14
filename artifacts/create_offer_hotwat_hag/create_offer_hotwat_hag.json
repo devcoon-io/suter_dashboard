@@ -2,7 +2,7 @@
   "test_name": "Create Proposal Cycle - Hot Water (HAG)",
   "test_description": "Creates a new offer request by filling out the multi-step form.",
   "test_group": "Create Project (Hot Water)",
-  "started_at": "2026-01-13 09:03:15 UTC",
+  "started_at": "2026-01-14 10:11:59 UTC",
   "duration": "00 hr 00 min 36 sec",
   "overall_status": "pass",
   "steps": [
