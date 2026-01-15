@@ -2,7 +2,7 @@
   "test_name": "Remote Maintenance Link Test",
   "test_description": "Verifies that the Remote Maintenance link is present for all tenants and points to https://www.pcvisit.de/kundenbereich/downloads/",
   "test_group": "Dashboard Functionality",
-  "started_at": "2026-01-14 10:22:41 UTC",
+  "started_at": "2026-01-15 08:44:20 UTC",
   "duration": "00 hr 00 min 29 sec",
   "overall_status": "pass",
   "steps": [

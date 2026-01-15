@@ -2,9 +2,9 @@
   "test_name": "Pricing Test - Adsorption dryer 1.5 (SET)",
   "test_description": "Creates a project in SET with Sales application and Test template, then adds Adsorption dryer 1.5 items to verify pricing.",
   "test_group": "Pricelist Validation",
-  "started_at": "2026-01-14 10:52:07 UTC",
+  "started_at": "2026-01-15 09:13:48 UTC",
   "duration": "00 hr 01 min 00 sec",
-  "video_file": "8e68da064f2ab6d566d0385d5451874b.webm",
+  "video_file": "fa26332ed6b407a7794611cab2d9ec4c.webm",
   "overall_status": "pass",
   "steps": [
     {
