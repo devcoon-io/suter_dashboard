@@ -2,8 +2,8 @@
   "test_name": "Pricing Test - S 50 (SET)",
   "test_description": "Creates a project in SET with Sales application and Test template, then adds S 50 items with 4 different price classes to verify pricing at different rental period boundaries.",
   "test_group": "Pricelist Validation",
-  "started_at": "2026-01-15 08:54:57 UTC",
-  "duration": "00 hr 04 min 40 sec",
+  "started_at": "2026-01-16 10:32:40 UTC",
+  "duration": "00 hr 04 min 39 sec",
   "overall_status": "pass",
   "steps": [
     {

@@ -2,9 +2,9 @@
   "test_name": "Pricing Test - Ventilator 300 (SET)",
   "test_description": "Creates a project in SET with Sales application and Test template, then adds Ventilator 300 items to verify pricing.",
   "test_group": "Pricelist Validation",
-  "started_at": "2026-01-15 09:29:08 UTC",
+  "started_at": "2026-01-16 11:07:02 UTC",
   "duration": "00 hr 01 min 00 sec",
-  "video_file": "2ec509c3300fa287894130fb8b917eb9.webm",
+  "video_file": "8f646116f70f371686c502c200cb62f4.webm",
   "overall_status": "pass",
   "steps": [
     {
