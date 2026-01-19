@@ -2,8 +2,8 @@
   "test_name": "Language Change Test - French (FR)",
   "test_description": "Verifies that a user can successfully change the language to French.",
   "test_group": "Dashboard Functionality",
-  "started_at": "2026-01-16 10:20:07 UTC",
-  "duration": "00 hr 00 min 20 sec",
+  "started_at": "2026-01-19 10:52:16 UTC",
+  "duration": "00 hr 00 min 24 sec",
   "overall_status": "pass",
   "steps": [
     {

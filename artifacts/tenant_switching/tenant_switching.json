@@ -1,0 +1,84 @@
+{
+  "test_name": "Tenant Switching Test",
+  "test_description": "Verifies that a user can successfully switch between all available tenants.",
+  "test_group": "Dashboard Functionality",
+  "started_at": "2026-01-19 10:53:30 UTC",
+  "duration": "00 hr 00 min 35 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/tenant_switching/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/tenant_switching/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/tenant_switching/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/tenant_switching/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Page fully loaded after login",
+      "status": "pass",
+      "screenshot": "artifacts/tenant_switching/screenshots/05-page-fully-loaded-after-login.png"
+    },
+    {
+      "step": "Switched to tenant SET",
+      "status": "pass",
+      "screenshot": "artifacts/tenant_switching/screenshots/06-switched-to-tenant-set.png"
+    },
+    {
+      "step": "Switched to tenant SUR",
+      "status": "pass",
+      "screenshot": "artifacts/tenant_switching/screenshots/07-switched-to-tenant-sur.png"
+    },
+    {
+      "step": "Switched to tenant SUD",
+      "status": "pass",
+      "screenshot": "artifacts/tenant_switching/screenshots/08-switched-to-tenant-sud.png"
+    },
+    {
+      "step": "Switched to tenant HAG",
+      "status": "pass",
+      "screenshot": "artifacts/tenant_switching/screenshots/09-switched-to-tenant-hag.png"
+    },
+    {
+      "step": "Switched to tenant HKU",
+      "status": "pass",
+      "screenshot": "artifacts/tenant_switching/screenshots/10-switched-to-tenant-hku.png"
+    },
+    {
+      "step": "Switched to tenant E4R",
+      "status": "pass",
+      "screenshot": "artifacts/tenant_switching/screenshots/11-switched-to-tenant-e4r.png"
+    },
+    {
+      "step": "Switched to tenant DIV",
+      "status": "pass",
+      "screenshot": "artifacts/tenant_switching/screenshots/12-switched-to-tenant-div.png"
+    },
+    {
+      "step": "Final screenshot captured - Tenant switching test complete",
+      "status": "pass",
+      "screenshot": "artifacts/tenant_switching/screenshots/13-final-screenshot-captured-tenant-switching-test-complete.png"
+    }
+  ],
+  "tenant_results": {
+    "SET": "pass",
+    "SUR": "pass",
+    "SUD": "pass",
+    "HAG": "pass",
+    "HKU": "pass",
+    "E4R": "pass",
+    "DIV": "pass"
+  }
+}

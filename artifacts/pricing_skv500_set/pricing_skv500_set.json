@@ -2,9 +2,9 @@
   "test_name": "Pricing Test - Side channel blower 500 (SET)",
   "test_description": "Creates a project in SET with Sales application and Test template, then adds Side channel blower 500 items to verify pricing.",
   "test_group": "Pricelist Validation",
-  "started_at": "2026-01-16 11:00:52 UTC",
-  "duration": "00 hr 01 min 01 sec",
-  "video_file": "23011c2a46c9d12fbf586b9da46f0796.webm",
+  "started_at": "2026-01-19 11:40:57 UTC",
+  "duration": "00 hr 01 min 14 sec",
+  "video_file": "a2b8c3f7453400026c1480f40d1c4a0d.webm",
   "overall_status": "pass",
   "steps": [
     {

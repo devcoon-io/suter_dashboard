@@ -2,8 +2,8 @@
   "test_name": "Pricing Test - HZ 105 / Hybrid (GEN3) (SET)",
   "test_description": "Creates a project in SET with Sales application and Test template, then adds HZ 105 items with 4 different price classes to verify pricing at different rental period boundaries.",
   "test_group": "Pricelist Validation",
-  "started_at": "2026-01-16 10:26:24 UTC",
-  "duration": "00 hr 01 min 35 sec",
+  "started_at": "2026-01-19 10:59:55 UTC",
+  "duration": "00 hr 01 min 50 sec",
   "overall_status": "pass",
   "steps": [
     {
