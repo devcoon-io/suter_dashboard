@@ -2,8 +2,8 @@
   "test_name": "Create Potential Project - Sales (SET)",
   "test_description": "Creates a new potential project by filling out the form.",
   "test_group": "Potential Project",
-  "started_at": "2026-01-19 10:56:47 UTC",
-  "duration": "00 hr 00 min 44 sec",
+  "started_at": "2026-01-20 11:55:18 UTC",
+  "duration": "00 hr 00 min 40 sec",
   "overall_status": "pass",
   "steps": [
     {
@@ -42,9 +42,9 @@
       "screenshot": "artifacts/potential_project_sales_set/screenshots/07-selected-sales-from-application-dropdown.png"
     },
     {
-      "step": "Project 'SET_Potential_Project_19_01_10_56_47' created successfully",
+      "step": "Project 'SET_Potential_Project_20_01_11_55_18' created successfully",
       "status": "pass",
-      "screenshot": "artifacts/potential_project_sales_set/screenshots/08-project-set-potential-project-19-01-10-56-47-created-successfully.png"
+      "screenshot": "artifacts/potential_project_sales_set/screenshots/08-project-set-potential-project-20-01-11-55-18-created-successfully.png"
     },
     {
       "step": "Filled project form fields",
@@ -72,9 +72,9 @@
       "screenshot": "artifacts/potential_project_sales_set/screenshots/13-navigated-to-potential-project-list.png"
     },
     {
-      "step": "Verified project 'SET_Potential_Project_19_01_10_56_47' appears in Potential Project list",
+      "step": "Verified project 'SET_Potential_Project_20_01_11_55_18' appears in Potential Project list",
       "status": "pass",
-      "screenshot": "artifacts/potential_project_sales_set/screenshots/14-verified-project-set-potential-project-19-01-10-56-47-appears-in-potential-project-list.png"
+      "screenshot": "artifacts/potential_project_sales_set/screenshots/14-verified-project-set-potential-project-20-01-11-55-18-appears-in-potential-project-list.png"
     },
     {
       "step": "Final screenshot captured",

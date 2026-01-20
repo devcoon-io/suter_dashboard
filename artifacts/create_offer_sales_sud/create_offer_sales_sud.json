@@ -2,8 +2,8 @@
   "test_name": "Create Proposal Cycle - Sales (SUD)",
   "test_description": "Creates a new offer request by filling out the multi-step form.",
   "test_group": "Create Project (Sales)",
-  "started_at": "2026-01-19 10:45:01 UTC",
-  "duration": "00 hr 01 min 14 sec",
+  "started_at": "2026-01-20 11:44:32 UTC",
+  "duration": "00 hr 01 min 09 sec",
   "overall_status": "pass",
   "steps": [
     {

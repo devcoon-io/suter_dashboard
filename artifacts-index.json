@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-19T12:30:46.750Z",
+  "generated_at": "2026-01-20T13:19:43.745Z",
   "folders": [
     {
       "name": "contacts",
@@ -214,7 +214,7 @@
     {
       "name": "pricing_hz105_hybrid_ww_set",
       "json_file": "pricing_hz105_hybrid_ww_set.json",
-      "video_file": "1e24ff5d1b6a3fdd77fc8ffd036c1055.webm"
+      "video_file": "a3d2dc3961a75cf12a5a32bd2e1b4d9e.webm"
     },
     {
       "name": "pricing_hz105_set",
@@ -259,7 +259,7 @@
     {
       "name": "pricing_hz90_trailer_set",
       "json_file": "pricing_hz90_trailer_set.json",
-      "video_file": "38f9d8369abf1279597a817987d8b116.webm"
+      "video_file": "cd47675798b421c0699f6ca784ede594.webm"
     },
     {
       "name": "pricing_s100_set",
