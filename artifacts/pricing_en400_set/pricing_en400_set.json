@@ -2,9 +2,9 @@
   "test_name": "Pricing Test - Dehumidifier 400 (SET)",
   "test_description": "Creates a project in SET with Sales application and Test template, then adds Dehumidifier 400 items to verify pricing.",
   "test_group": "Pricelist Validation",
-  "started_at": "2026-01-20 12:28:19 UTC",
-  "duration": "00 hr 01 min 02 sec",
-  "video_file": "cef5dedca95f0e6ddfb684d0d02c2b83.webm",
+  "started_at": "2026-01-21 09:51:21 UTC",
+  "duration": "00 hr 01 min 01 sec",
+  "video_file": "d2a5ac91d9be8132443dd0637fbf8890.webm",
   "overall_status": "pass",
   "steps": [
     {

@@ -2,9 +2,9 @@
   "test_name": "Pricing Test - HZ 105 / Hybrid (GEN3) Warm Water (SET)",
   "test_description": "Creates a project in SET with Sales application and Test template, then adds HZ 105 / Hybrid (GEN3) items from Warm Water Heaters to verify pricing at different rental period boundaries.",
   "test_group": "Pricelist Validation",
-  "started_at": "2026-01-20 12:13:52 UTC",
-  "duration": "00 hr 01 min 29 sec",
-  "video_file": "a3d2dc3961a75cf12a5a32bd2e1b4d9e.webm",
+  "started_at": "2026-01-21 09:37:30 UTC",
+  "duration": "00 hr 01 min 26 sec",
+  "video_file": "90a03f2c26823825f220a1b1a7c9ce9b.webm",
   "overall_status": "pass",
   "steps": [
     {
