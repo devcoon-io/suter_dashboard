@@ -2,7 +2,7 @@
   "test_name": "Project Lifecycle Workflow (SUR)",
   "test_description": "Moves a project through all stages: Offered -> Ordered -> Ready -> Active -> Invoicing",
   "test_group": "Project Lifecycle",
-  "started_at": "2026-01-21 10:10:45 UTC",
+  "started_at": "2026-01-22 11:07:24 UTC",
   "duration": "00 hr 01 min 34 sec",
   "overall_status": "pass",
   "steps": [

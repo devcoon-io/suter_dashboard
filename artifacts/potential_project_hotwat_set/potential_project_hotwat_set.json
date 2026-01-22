@@ -2,7 +2,7 @@
   "test_name": "Create Potential Project - Hot Water (SET)",
   "test_description": "Creates a new potential project by filling out the form.",
   "test_group": "Potential Project",
-  "started_at": "2026-01-21 09:18:48 UTC",
+  "started_at": "2026-01-22 10:04:23 UTC",
   "duration": "00 hr 00 min 36 sec",
   "overall_status": "pass",
   "steps": [
@@ -67,9 +67,9 @@
       "screenshot": "artifacts/potential_project_hotwat_set/screenshots/12-navigated-to-potential-project-list.png"
     },
     {
-      "step": "Verified project 'SET_Potential_Project_21_01_09_18_48' appears in Potential Project list",
+      "step": "Verified project 'SET_Potential_Project_22_01_10_04_23' appears in Potential Project list",
       "status": "pass",
-      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/13-verified-project-set-potential-project-21-01-09-18-48-appears-in-potential-project-list.png"
+      "screenshot": "artifacts/potential_project_hotwat_set/screenshots/13-verified-project-set-potential-project-22-01-10-04-23-appears-in-potential-project-list.png"
     },
     {
       "step": "Final screenshot captured",

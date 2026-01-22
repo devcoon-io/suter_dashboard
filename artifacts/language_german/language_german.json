@@ -2,7 +2,7 @@
   "test_name": "Language Change Test - German (DE)",
   "test_description": "Verifies that a user can successfully change the language to German.",
   "test_group": "Dashboard Functionality",
-  "started_at": "2026-01-21 09:15:20 UTC",
+  "started_at": "2026-01-22 10:00:59 UTC",
   "duration": "00 hr 00 min 21 sec",
   "overall_status": "pass",
   "steps": [
