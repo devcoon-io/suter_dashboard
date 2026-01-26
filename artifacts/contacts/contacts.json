@@ -2,8 +2,8 @@
   "test_name": "Contacts Verification Test",
   "test_description": "Verifies that contact information (Email, Phone, Platform) is present for all tenants.",
   "test_group": "Dashboard Functionality",
-  "started_at": "2026-01-22 10:02:48 UTC",
-  "duration": "00 hr 00 min 29 sec",
+  "started_at": "2026-01-26 12:07:30 UTC",
+  "duration": "00 hr 00 min 36 sec",
   "overall_status": "pass",
   "steps": [
     {

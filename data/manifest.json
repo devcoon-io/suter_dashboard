@@ -77,6 +77,33 @@
     "project_lifecycle_sud.json",
     "project_lifecycle_sur.json",
 
-    "orders_lifecycle.json"
+    "orders_lifecycle.json",
+
+    "marketplace_transfer_set_to_div.json",
+    "marketplace_transfer_set_to_e4r.json",
+    "marketplace_transfer_set_to_hag.json",
+    "marketplace_transfer_set_to_hku.json",
+    "marketplace_transfer_set_to_sud.json",
+    "marketplace_transfer_set_to_sur.json",
+
+    "project_delivery_warmair_hag.json",
+    "project_delivery_warmair_set.json",
+    "project_delivery_warmair_sud.json",
+    "project_delivery_warmair_sur.json",
+
+    "project_timesheet_warmair_hag.json",
+    "project_timesheet_warmair_set.json",
+    "project_timesheet_warmair_sud.json",
+    "project_timesheet_warmair_sur.json",
+
+    "project_active_functionality_set.json",
+    "project_active_invoicing_tab_functionality_set.json",
+    "project_invoicing_functionality_set.json",
+    "project_invoicing_invoicing_tab_functionality_set.json",
+    "project_offered_functionality_set.json",
+    "project_ordered_functionality_set.json",
+    "project_ready_functionality_set.json",
+
+    "projects_navigation_set.json"
   ]
 }

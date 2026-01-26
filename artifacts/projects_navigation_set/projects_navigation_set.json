@@ -1,0 +1,85 @@
+{
+  "test_name": "Projects Tab Navigation Test (SET)",
+  "test_description": "Verifies that all options in the Projects tab can be opened and display correctly for SET tenant.",
+  "test_group": "Dashboard Functionality",
+  "started_at": "2026-01-26 14:28:05 UTC",
+  "duration": "00 hr 00 min 30 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected SET tenant",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/05-selected-set-tenant.png"
+    },
+    {
+      "step": "Clicked Projects tab",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/06-clicked-projects-tab.png"
+    },
+    {
+      "step": "Projects page loaded - Offered tab visible",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/07-projects-page-loaded-offered-tab-visible.png"
+    },
+    {
+      "step": "Proposal page loaded - Application step visible",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/08-proposal-page-loaded-application-step-visible.png"
+    },
+    {
+      "step": "Potential Project page loaded - Project header visible",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/09-potential-project-page-loaded-project-header-visible.png"
+    },
+    {
+      "step": "Orders page loaded - Number header visible",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/10-orders-page-loaded-number-header-visible.png"
+    },
+    {
+      "step": "Time Sheet page loaded - Project header visible",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/11-time-sheet-page-loaded-project-header-visible.png"
+    },
+    {
+      "step": "Material List page loaded - Date header visible",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/12-material-list-page-loaded-date-header-visible.png"
+    },
+    {
+      "step": "Billing Dashboard page loaded - Project header visible",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/13-billing-dashboard-page-loaded-project-header-visible.png"
+    },
+    {
+      "step": "Regions page loaded - Sales Regions header visible",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/14-regions-page-loaded-sales-regions-header-visible.png"
+    },
+    {
+      "step": "Final screenshot captured - Projects navigation test complete",
+      "status": "pass",
+      "screenshot": "artifacts/projects_navigation_set/screenshots/15-final-screenshot-captured-projects-navigation-test-complete.png"
+    }
+  ]
+}

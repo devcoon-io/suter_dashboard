@@ -2,8 +2,8 @@
   "test_name": "Create Proposal Cycle - Warm Air (HAG)",
   "test_description": "Creates a new offer request by filling out the multi-step form.",
   "test_group": "Create Project (Warm Air)",
-  "started_at": "2026-01-22 09:59:46 UTC",
-  "duration": "00 hr 00 min 34 sec",
+  "started_at": "2026-01-26 12:03:39 UTC",
+  "duration": "00 hr 00 min 45 sec",
   "overall_status": "pass",
   "steps": [
     {

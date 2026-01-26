@@ -1,0 +1,130 @@
+{
+  "test_name": "Project Offered Functionality Test (SET)",
+  "test_description": "Creates a new Warm Air project and tests all tabs within the project detail view for SET tenant.",
+  "test_group": "Dashboard Functionality",
+  "started_at": "2026-01-26 12:20:02 UTC",
+  "duration": "00 hr 01 min 10 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected SET tenant",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/05-selected-set-tenant.png"
+    },
+    {
+      "step": "Clicked Projects menu",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/06-clicked-projects-menu.png"
+    },
+    {
+      "step": "Clicked Proposal tab",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/07-clicked-proposal-tab.png"
+    },
+    {
+      "step": "Selected Warm Air application",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/08-selected-warm-air-application.png"
+    },
+    {
+      "step": "Filled project form fields",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/09-filled-project-form-fields.png"
+    },
+    {
+      "step": "Clicked Next button (step 1)",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/10-clicked-next-button-step-1.png"
+    },
+    {
+      "step": "Clicked Next button (step 2)",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/11-clicked-next-button-step-2.png"
+    },
+    {
+      "step": "Selected customer",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/12-selected-customer.png"
+    },
+    {
+      "step": "Clicked Create button",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/13-clicked-create-button.png"
+    },
+    {
+      "step": "Project created - Offer number appeared",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/14-project-created-offer-number-appeared.png"
+    },
+    {
+      "step": "Navigated back to Projects",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/15-navigated-back-to-projects.png"
+    },
+    {
+      "step": "Clicked last item in Offered column",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/16-clicked-last-item-in-offered-column.png"
+    },
+    {
+      "step": "Edit button visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/17-edit-button-visible.png"
+    },
+    {
+      "step": "Overview tab - Ordered button visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/18-overview-tab-ordered-button-visible.png"
+    },
+    {
+      "step": "Time Sheet tab - Date header visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/19-time-sheet-tab-date-header-visible.png"
+    },
+    {
+      "step": "Proposal tab - Offer Nr. heading visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/20-proposal-tab-offer-nr-heading-visible.png"
+    },
+    {
+      "step": "Activities tab - No data found message visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/21-activities-tab-no-data-found-message-visible.png"
+    },
+    {
+      "step": "Comments tab - Add button visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/22-comments-tab-add-button-visible.png"
+    },
+    {
+      "step": "OwnCloud tab - Acquisition text visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/23-owncloud-tab-acquisition-text-visible.png"
+    },
+    {
+      "step": "Final screenshot captured - Project offered functionality test complete",
+      "status": "pass",
+      "screenshot": "artifacts/project_offered_functionality_set/screenshots/24-final-screenshot-captured-project-offered-functionality-test-complete.png"
+    }
+  ]
+}

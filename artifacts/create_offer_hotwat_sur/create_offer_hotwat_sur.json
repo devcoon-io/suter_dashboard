@@ -2,8 +2,8 @@
   "test_name": "Create Proposal Cycle - Hot Water (SUR)",
   "test_description": "Creates a new offer request by filling out the multi-step form.",
   "test_group": "Create Project (Hot Water)",
-  "started_at": "2026-01-22 09:51:22 UTC",
-  "duration": "00 hr 00 min 36 sec",
+  "started_at": "2026-01-26 11:53:05 UTC",
+  "duration": "00 hr 00 min 48 sec",
   "overall_status": "pass",
   "steps": [
     {

@@ -2,9 +2,9 @@
   "test_name": "Pricing Test - HZ 210 kW (SET)",
   "test_description": "Creates a project in SET with Sales application and Test template, then adds HZ 210 kW items to verify pricing at different rental period boundaries.",
   "test_group": "Pricelist Validation",
-  "started_at": "2026-01-22 10:25:58 UTC",
-  "duration": "00 hr 01 min 26 sec",
-  "video_file": "edbc7dd8aae628f7a14c2db4cf673bee.webm",
+  "started_at": "2026-01-26 12:53:00 UTC",
+  "duration": "00 hr 01 min 58 sec",
+  "video_file": "0191bb6381ec952d331d7168d0ff9ba2.webm",
   "overall_status": "pass",
   "steps": [
     {

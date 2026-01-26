@@ -1,0 +1,98 @@
+{
+  "test_name": "Marketplace Transfer Test - SET to HAG",
+  "test_description": "Verifies that marketplace equipment transfers correctly from SET to HAG tenant.",
+  "test_group": "Marketplace",
+  "started_at": "2026-01-26 13:34:19 UTC",
+  "duration": "00 hr 00 min 44 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Switched to SET tenant",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/05-switched-to-set-tenant.png"
+    },
+    {
+      "step": "Navigated to Market Place",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/06-navigated-to-market-place.png"
+    },
+    {
+      "step": "Clicked on Warm air heaters tab",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/07-clicked-on-warm-air-heaters-tab.png"
+    },
+    {
+      "step": "Clicked on first product: H041-LA150Pv0",
+      "status": "pass",
+      "details": "Product name: H041-LA150Pv0",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/08-clicked-on-first-product-h041-la150pv0.png"
+    },
+    {
+      "step": "Deleted item #1",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/09-deleted-item-1.png"
+    },
+    {
+      "step": "All items deleted (total: 1)",
+      "status": "pass",
+      "details": "Deleted 1 items",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/10-all-items-deleted-total-1.png"
+    },
+    {
+      "step": "Selected Holag AG from User dropdown",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/11-selected-holag-ag-from-user-dropdown.png"
+    },
+    {
+      "step": "Clicked Save button",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/12-clicked-save-button.png"
+    },
+    {
+      "step": "Switched to HAG tenant",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/13-switched-to-hag-tenant.png"
+    },
+    {
+      "step": "Navigated to Market Place in HAG",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/14-navigated-to-market-place-in-hag.png"
+    },
+    {
+      "step": "Clicked on Warm air heaters tab in HAG",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/15-clicked-on-warm-air-heaters-tab-in-hag.png"
+    },
+    {
+      "step": "Product name matches in HAG: H041-LA150Pv0",
+      "status": "pass",
+      "details": "Expected: H041-LA150Pv0, Found: H041-LA150Pv0",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/16-product-name-matches-in-hag-h041-la150pv0.png"
+    },
+    {
+      "step": "Final screenshot captured - Marketplace transfer test complete",
+      "status": "pass",
+      "screenshot": "artifacts/marketplace_transfer_set_to_hag/screenshots/17-final-screenshot-captured-marketplace-transfer-test-complete.png"
+    }
+  ]
+}

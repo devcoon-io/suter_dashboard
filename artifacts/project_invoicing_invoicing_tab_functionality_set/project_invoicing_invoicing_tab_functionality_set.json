@@ -1,0 +1,230 @@
+{
+  "test_name": "Project Invoicing Invoicing Tab Functionality Test (SET)",
+  "test_description": "Creates a new Warm Air project, moves it to Invoicing status, and tests all sub-tabs within the Invoicing tab for SET tenant.",
+  "test_group": "Dashboard Functionality",
+  "started_at": "2026-01-26 12:11:37 UTC",
+  "duration": "00 hr 03 min 04 sec",
+  "overall_status": "pass",
+  "steps": [
+    {
+      "step": "Login page loaded",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/01-login-page-loaded.png"
+    },
+    {
+      "step": "Filled credentials",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/02-filled-credentials.png"
+    },
+    {
+      "step": "Submitted login form",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/03-submitted-login-form.png"
+    },
+    {
+      "step": "Login successful",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/04-login-successful.png"
+    },
+    {
+      "step": "Selected SET tenant",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/05-selected-set-tenant.png"
+    },
+    {
+      "step": "Clicked Projects menu",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/06-clicked-projects-menu.png"
+    },
+    {
+      "step": "Clicked Proposal tab",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/07-clicked-proposal-tab.png"
+    },
+    {
+      "step": "Selected Warm Air application",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/08-selected-warm-air-application.png"
+    },
+    {
+      "step": "Filled project form fields",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/09-filled-project-form-fields.png"
+    },
+    {
+      "step": "Clicked Next button (step 1)",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/10-clicked-next-button-step-1.png"
+    },
+    {
+      "step": "Clicked Next button (step 2)",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/11-clicked-next-button-step-2.png"
+    },
+    {
+      "step": "Selected customer",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/12-selected-customer.png"
+    },
+    {
+      "step": "Clicked Create button",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/13-clicked-create-button.png"
+    },
+    {
+      "step": "Project created - Offer number appeared",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/14-project-created-offer-number-appeared.png"
+    },
+    {
+      "step": "Navigated back to Projects",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/15-navigated-back-to-projects.png"
+    },
+    {
+      "step": "Clicked last item in Offered column",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/16-clicked-last-item-in-offered-column.png"
+    },
+    {
+      "step": "Clicked Edit button",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/17-clicked-edit-button.png"
+    },
+    {
+      "step": "Selected Invoice Issuer",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/18-selected-invoice-issuer.png"
+    },
+    {
+      "step": "Clicked Save button",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/19-clicked-save-button.png"
+    },
+    {
+      "step": "Clicked Ordered button",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/20-clicked-ordered-button.png"
+    },
+    {
+      "step": "Completed Ordered checklist",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/21-completed-ordered-checklist.png"
+    },
+    {
+      "step": "Clicked last item in Ordered column",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/22-clicked-last-item-in-ordered-column.png"
+    },
+    {
+      "step": "Clicked Ready button",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/23-clicked-ready-button.png"
+    },
+    {
+      "step": "Completed Ready checklist",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/24-completed-ready-checklist.png"
+    },
+    {
+      "step": "Clicked last item in Ready column",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/25-clicked-last-item-in-ready-column.png"
+    },
+    {
+      "step": "Clicked Active button",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/26-clicked-active-button.png"
+    },
+    {
+      "step": "Completed Active checklist",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/27-completed-active-checklist.png"
+    },
+    {
+      "step": "Verified project is in Active column",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/28-verified-project-is-in-active-column.png"
+    },
+    {
+      "step": "Clicked last item in Active column",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/29-clicked-last-item-in-active-column.png"
+    },
+    {
+      "step": "Clicked Invoicing button",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/30-clicked-invoicing-button.png"
+    },
+    {
+      "step": "Completed Invoicing checklist",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/31-completed-invoicing-checklist.png"
+    },
+    {
+      "step": "Verified project is in Invoicing column",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/32-verified-project-is-in-invoicing-column.png"
+    },
+    {
+      "step": "Clicked last item in Invoicing column",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/33-clicked-last-item-in-invoicing-column.png"
+    },
+    {
+      "step": "Navigated to Invoicing tab",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/34-navigated-to-invoicing-tab.png"
+    },
+    {
+      "step": "Billing sub-tab - Invoice button visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/35-billing-sub-tab-invoice-button-visible.png"
+    },
+    {
+      "step": "Rental Equipment (billing) sub-tab - Accumulated to billing visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/36-rental-equipment-billing-sub-tab-accumulated-to-billing-visible.png"
+    },
+    {
+      "step": "Service (billing) sub-tab - Accumulated to billing visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/37-service-billing-sub-tab-accumulated-to-billing-visible.png"
+    },
+    {
+      "step": "Energy (billing) sub-tab - Accumulated to billing visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/38-energy-billing-sub-tab-accumulated-to-billing-visible.png"
+    },
+    {
+      "step": "Additional Services sub-tab - Accumulated to billing visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/39-additional-services-sub-tab-accumulated-to-billing-visible.png"
+    },
+    {
+      "step": "Rental Equipment (reports) sub-tab - Name header visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/40-rental-equipment-reports-sub-tab-name-header-visible.png"
+    },
+    {
+      "step": "Service (reports) sub-tab - Date header visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/41-service-reports-sub-tab-date-header-visible.png"
+    },
+    {
+      "step": "Energy (reports) sub-tab - Name header visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/42-energy-reports-sub-tab-name-header-visible.png"
+    },
+    {
+      "step": "Conditions sub-tab - Version title visible",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/43-conditions-sub-tab-version-title-visible.png"
+    },
+    {
+      "step": "Final screenshot captured - Project active invoicing tab functionality test complete",
+      "status": "pass",
+      "screenshot": "artifacts/project_invoicing_invoicing_tab_functionality_set/screenshots/44-final-screenshot-captured-project-active-invoicing-tab-functionality-test-complete.png"
+    }
+  ]
+}
