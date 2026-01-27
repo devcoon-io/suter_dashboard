@@ -417,7 +417,8 @@ function filterTestsBySearch(tests, query){
   if (!query) return tests;
   const lowerQuery = query.toLowerCase();
   return tests.filter(t => 
-    (t.test_name || "").toLowerCase().includes(lowerQuery)
+    (t.test_name || "").toLowerCase().includes(lowerQuery) ||
+    (t.test_case_number || "").toLowerCase().includes(lowerQuery)
   );
 }
 
@@ -433,6 +434,16 @@ function renderTests(tests){
 
   emptyState.classList.add("hidden");
   renderSummary(tests);
+  
+  // Add documentation link
+  const docLink = document.createElement("div");
+  docLink.className = "doc-link-container";
+  docLink.innerHTML = `
+    <a href="https://shoreit.atlassian.net/wiki/spaces/Suter/database/201129989?atlOrigin=eyJpIjoiMTRjYmQ2OTdhNWI4NDhkMTk2ZTk0ZWRkNGRiNjViMDIiLCJwIjoiYyJ9" target="_blank" class="doc-link">
+      Test Cases Documentation
+    </a>
+  `;
+  testsList.appendChild(docLink);
   
   // Add search bar (only once)
   const searchBox = document.createElement("div");
@@ -497,6 +508,7 @@ function renderTestsContent(tests){
     <div class="tests-header">
       <div>Status</div>
       <div>Group / Test Name</div>
+      <div class="col-test-case">Test Case #</div>
       <div class="col-duration">${escapeHtml(totalDuration)}</div>
       <div class="col-started">Time</div>
       <div></div>
@@ -525,6 +537,7 @@ function renderTestsContent(tests){
       <div class="group-row" tabindex="0" role="button" aria-expanded="false">
         <div class="badge ${groupStatus}">${groupStatus.replace("_"," ").toUpperCase()}</div>
         <div class="group-name">${escapeHtml(groupName)} <span class="group-count">${groupTests.length}</span></div>
+        <div class="meta col-test-case"></div>
         <div class="meta col-duration">${escapeHtml(groupDuration)}</div>
         <div class="meta col-started"></div>
         <div class="chev">${chevron()}</div>
@@ -565,6 +578,7 @@ function renderTestsContent(tests){
         <div class="test-row" ${isNotTested ? '' : 'tabindex="0" role="button" aria-expanded="false"'}>
           <div class="badge ${status}">${status.replace("_"," ").toUpperCase()}</div>
           <div class="test-name">${escapeHtml(t.test_name || "Unnamed test")}</div>
+          <div class="meta col-test-case">${escapeHtml(t.test_case_number || "-")}</div>
           <div class="meta col-duration">${escapeHtml(formatDuration(t.duration))}</div>
           <div class="meta col-started">${escapeHtml(kyivTime)}</div>
           ${isNotTested ? '<div class="chev"></div>' : `<div class="chev">${chevron()}</div>`}

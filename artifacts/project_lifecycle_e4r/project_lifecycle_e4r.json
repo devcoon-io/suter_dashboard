@@ -2,8 +2,9 @@
   "test_name": "Project Lifecycle Workflow (E4R)",
   "test_description": "Moves a project through all stages: Offered -> Ordered -> Ready -> Active -> Invoicing",
   "test_group": "Project Lifecycle",
-  "started_at": "2026-01-26 13:23:19 UTC",
-  "duration": "00 hr 01 min 38 sec",
+  "started_at": "2026-01-26 23:12:10 UTC",
+  "test_case_number": "08-05",
+  "duration": "00 hr 01 min 19 sec",
   "overall_status": "pass",
   "steps": [
     {

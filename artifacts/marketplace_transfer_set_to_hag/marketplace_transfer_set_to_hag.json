@@ -2,8 +2,9 @@
   "test_name": "Marketplace Transfer Test - SET to HAG",
   "test_description": "Verifies that marketplace equipment transfers correctly from SET to HAG tenant.",
   "test_group": "Marketplace",
-  "started_at": "2026-01-26 13:34:19 UTC",
-  "duration": "00 hr 00 min 44 sec",
+  "started_at": "2026-01-26 23:22:16 UTC",
+  "test_case_number": "05-03",
+  "duration": "00 hr 00 min 34 sec",
   "overall_status": "pass",
   "steps": [
     {

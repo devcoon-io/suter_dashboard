@@ -2,8 +2,9 @@
   "test_name": "Marketplace Transfer Test - SET to SUD",
   "test_description": "Verifies that marketplace equipment transfers correctly from SET to SUD tenant.",
   "test_group": "Marketplace",
-  "started_at": "2026-01-26 13:32:38 UTC",
-  "duration": "00 hr 00 min 56 sec",
+  "started_at": "2026-01-26 23:21:06 UTC",
+  "test_case_number": "05-01",
+  "duration": "00 hr 00 min 34 sec",
   "overall_status": "pass",
   "steps": [
     {

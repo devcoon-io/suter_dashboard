@@ -2,8 +2,9 @@
   "test_name": "Login Test",
   "test_description": "Verifies that a user can successfully log in to the application.",
   "test_group": "Dashboard Functionality",
-  "started_at": "2026-01-26 12:06:30 UTC",
-  "duration": "00 hr 00 min 08 sec",
+  "started_at": "2026-01-26 22:11:01 UTC",
+  "test_case_number": "02-01",
+  "duration": "00 hr 00 min 05 sec",
   "overall_status": "pass",
   "steps": [
     {

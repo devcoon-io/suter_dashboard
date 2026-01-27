@@ -2,8 +2,9 @@
   "test_name": "Project Lifecycle Workflow (SET)",
   "test_description": "Moves a project through all stages: Offered -> Ordered -> Ready -> Active -> Invoicing",
   "test_group": "Project Lifecycle",
-  "started_at": "2026-01-26 13:26:53 UTC",
-  "duration": "00 hr 01 min 54 sec",
+  "started_at": "2026-01-27 07:31:38 UTC",
+  "test_case_number": "08-01",
+  "duration": "00 hr 01 min 43 sec",
   "overall_status": "pass",
   "steps": [
     {

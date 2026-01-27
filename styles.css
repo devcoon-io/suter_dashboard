@@ -233,6 +233,24 @@ html, body {
   pointer-events: none;
 }
 
+.doc-link-container {
+  margin-bottom: 12px;
+  text-align: right;
+}
+
+.doc-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  transition: opacity 0.15s;
+}
+
+.doc-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 .search-box-container {
   margin-bottom: 16px;
 }
@@ -382,7 +400,7 @@ html, body {
 
 .tests-header {
   display: grid;
-  grid-template-columns: 100px 2fr 140px 180px 40px;
+  grid-template-columns: 100px 2fr 100px 140px 180px 40px;
   gap: 16px;
   align-items: center;
   padding: 12px 16px;
@@ -399,7 +417,7 @@ html, body {
 
 @media (max-width: 900px) {
   .tests-header {
-    grid-template-columns: 100px 1fr 140px 40px;
+    grid-template-columns: 100px 1fr 100px 140px 40px;
   }
   .tests-header .col-started { display: none; }
 }
@@ -408,6 +426,7 @@ html, body {
   .tests-header {
     grid-template-columns: 100px 1fr 40px;
   }
+  .tests-header .col-test-case,
   .tests-header .col-duration,
   .tests-header .col-started { display: none; }
 }
@@ -433,7 +452,7 @@ html, body {
 
 .group-row {
   display: grid;
-  grid-template-columns: 100px 2fr 140px 180px 40px;
+  grid-template-columns: 100px 2fr 100px 140px 180px 40px;
   gap: 16px;
   align-items: center;
   padding: 12px 16px;
@@ -488,7 +507,7 @@ html, body {
 
 @media (max-width: 900px) {
   .group-row {
-    grid-template-columns: 100px 1fr 140px 40px;
+    grid-template-columns: 100px 1fr 100px 140px 40px;
   }
   .group-row .col-started { display: none; }
 }
@@ -497,6 +516,7 @@ html, body {
   .group-row {
     grid-template-columns: 100px 1fr 40px;
   }
+  .group-row .col-test-case,
   .group-row .col-duration,
   .group-row .col-started { display: none; }
 }
@@ -511,7 +531,7 @@ html, body {
 
 .test-row {
   display: grid;
-  grid-template-columns: 100px 2fr 140px 180px 40px;
+  grid-template-columns: 100px 2fr 100px 140px 180px 40px;
   gap: 16px;
   align-items: center;
   padding: 12px 16px;
@@ -525,7 +545,7 @@ html, body {
 
 @media (max-width: 900px) {
   .test-row {
-    grid-template-columns: 100px 1fr 140px 40px;
+    grid-template-columns: 100px 1fr 100px 140px 40px;
   }
   .col-started { display: none; }
 }
@@ -534,7 +554,7 @@ html, body {
   .test-row {
     grid-template-columns: 100px 1fr 40px;
   }
-  .col-duration, .col-started { display: none; }
+  .col-test-case, .col-duration, .col-started { display: none; }
 }
 
 .badge {
@@ -582,6 +602,10 @@ html, body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.col-test-case {
+  font-weight: 700;
 }
 
 .chev {

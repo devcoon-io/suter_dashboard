@@ -2,8 +2,9 @@
   "test_name": "Project Invoicing Functionality Test (SET)",
   "test_description": "Creates a new Warm Air project, moves it to Invoicing status, and tests all tabs within the project detail view for SET tenant.",
   "test_group": "Dashboard Functionality",
-  "started_at": "2026-01-26 12:08:44 UTC",
-  "duration": "00 hr 02 min 51 sec",
+  "started_at": "2026-01-26 22:12:44 UTC",
+  "test_case_number": "02-15",
+  "duration": "00 hr 02 min 18 sec",
   "overall_status": "pass",
   "steps": [
     {

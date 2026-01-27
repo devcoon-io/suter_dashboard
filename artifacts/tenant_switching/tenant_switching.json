@@ -2,8 +2,9 @@
   "test_name": "Tenant Switching Test",
   "test_description": "Verifies that a user can successfully switch between all available tenants.",
   "test_group": "Dashboard Functionality",
-  "started_at": "2026-01-26 12:06:52 UTC",
-  "duration": "00 hr 00 min 37 sec",
+  "started_at": "2026-01-26 22:11:15 UTC",
+  "test_case_number": "02-03",
+  "duration": "00 hr 00 min 29 sec",
   "overall_status": "pass",
   "steps": [
     {

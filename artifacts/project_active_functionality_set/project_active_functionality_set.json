@@ -2,8 +2,9 @@
   "test_name": "Project Active Functionality Test (SET)",
   "test_description": "Creates a new Warm Air project, moves it to Active status, and tests all tabs within the project detail view for SET tenant.",
   "test_group": "Dashboard Functionality",
-  "started_at": "2026-01-26 14:26:05 UTC",
-  "duration": "00 hr 02 min 00 sec",
+  "started_at": "2026-01-26 22:17:32 UTC",
+  "test_case_number": "02-12",
+  "duration": "00 hr 01 min 58 sec",
   "overall_status": "pass",
   "steps": [
     {

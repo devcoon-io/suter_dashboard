@@ -2,8 +2,9 @@
   "test_name": "Project Lifecycle Workflow (SUD)",
   "test_description": "Moves a project through all stages: Offered -> Ordered -> Ready -> Active -> Invoicing",
   "test_group": "Project Lifecycle",
-  "started_at": "2026-01-26 13:28:49 UTC",
-  "duration": "00 hr 01 min 53 sec",
+  "started_at": "2026-01-27 07:33:22 UTC",
+  "test_case_number": "08-03",
+  "duration": "00 hr 01 min 43 sec",
   "overall_status": "pass",
   "steps": [
     {

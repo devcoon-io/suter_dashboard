@@ -2,8 +2,9 @@
   "test_name": "Marketplace Transfer Test - SET to SUR",
   "test_description": "Verifies that marketplace equipment transfers correctly from SET to SUR tenant.",
   "test_group": "Marketplace",
-  "started_at": "2026-01-26 13:33:35 UTC",
-  "duration": "00 hr 00 min 43 sec",
+  "started_at": "2026-01-26 23:21:41 UTC",
+  "test_case_number": "05-02",
+  "duration": "00 hr 00 min 35 sec",
   "overall_status": "pass",
   "steps": [
     {
