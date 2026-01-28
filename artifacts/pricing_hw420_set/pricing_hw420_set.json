@@ -2,10 +2,10 @@
   "test_name": "Pricing Test - Heating wall 420 (SET)",
   "test_description": "Creates a project in SET with Sales application and Test template, then adds Heating wall 420 items to verify pricing.",
   "test_group": "Pricelist Validation",
-  "started_at": "2026-01-26 23:00:59 UTC",
+  "started_at": "2026-01-28 06:35:58 UTC",
   "test_case_number": "09-01-08",
   "duration": "00 hr 01 min 00 sec",
-  "video_file": "e5b087c586d385ef72a9d1cbcc4d072d.webm",
+  "video_file": "adff7dcbfaa9bc5d79bc234f08e9aff0.webm",
   "overall_status": "pass",
   "steps": [
     {

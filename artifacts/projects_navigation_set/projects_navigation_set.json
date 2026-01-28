@@ -2,9 +2,9 @@
   "test_name": "Projects Tab Navigation Test (SET)",
   "test_description": "Verifies that all options in the Projects tab can be opened and display correctly for SET tenant.",
   "test_group": "Dashboard Functionality",
-  "started_at": "2026-01-26 22:25:40 UTC",
+  "started_at": "2026-01-28 06:00:35 UTC",
   "test_case_number": "02-09",
-  "duration": "00 hr 00 min 30 sec",
+  "duration": "00 hr 00 min 29 sec",
   "overall_status": "pass",
   "steps": [
     {

@@ -2,10 +2,10 @@
   "test_name": "Pricing Test - HZ 90 kW trailer (SET)",
   "test_description": "Creates a project in SET with Sales application and Test template, then adds HZ 90 kW trailer items to verify pricing at different rental period boundaries.",
   "test_group": "Pricelist Validation",
-  "started_at": "2026-01-26 22:43:50 UTC",
+  "started_at": "2026-01-28 06:18:49 UTC",
   "test_case_number": "09-03-03",
   "duration": "00 hr 01 min 26 sec",
-  "video_file": "3ed07937ee55c9d0492f0db0a4590934.webm",
+  "video_file": "3647c2c31687483105e0a14840d6ec3f.webm",
   "overall_status": "pass",
   "steps": [
     {

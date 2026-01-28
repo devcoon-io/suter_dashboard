@@ -2,7 +2,7 @@
   "test_name": "Create Potential Project - Dehumidification (SET)",
   "test_description": "Creates a new potential project by filling out the form.",
   "test_group": "Potential Project",
-  "started_at": "2026-01-26 22:26:11 UTC",
+  "started_at": "2026-01-28 06:01:05 UTC",
   "test_case_number": "07-03",
   "duration": "00 hr 00 min 34 sec",
   "overall_status": "pass",
@@ -68,9 +68,9 @@
       "screenshot": "artifacts/potential_project_dehum_set/screenshots/12-navigated-to-potential-project-list.png"
     },
     {
-      "step": "Verified project 'SET_Potential_Project_26_01_22_26_11' appears in Potential Project list",
+      "step": "Verified project 'SET_Potential_Project_28_01_06_01_05' appears in Potential Project list",
       "status": "pass",
-      "screenshot": "artifacts/potential_project_dehum_set/screenshots/13-verified-project-set-potential-project-26-01-22-26-11-appears-in-potential-project-list.png"
+      "screenshot": "artifacts/potential_project_dehum_set/screenshots/13-verified-project-set-potential-project-28-01-06-01-05-appears-in-potential-project-list.png"
     },
     {
       "step": "Final screenshot captured",

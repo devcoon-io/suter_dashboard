@@ -2,9 +2,9 @@
   "test_name": "Orders Lifecycle Test",
   "test_description": "Verifies the complete order lifecycle: create, confirm, and deliver an order.",
   "test_group": "Orders",
-  "started_at": "2026-01-26 23:24:37 UTC",
+  "started_at": "2026-01-28 07:04:47 UTC",
   "test_case_number": "06-01",
-  "duration": "00 hr 00 min 47 sec",
+  "duration": "00 hr 00 min 46 sec",
   "overall_status": "pass",
   "steps": [
     {
@@ -63,9 +63,9 @@
       "screenshot": "artifacts/orders_lifecycle/screenshots/11-selected-silo-tank-option.png"
     },
     {
-      "step": "Entered planned delivery date: 03.02.2026",
+      "step": "Entered planned delivery date: 04.02.2026",
       "status": "pass",
-      "screenshot": "artifacts/orders_lifecycle/screenshots/12-entered-planned-delivery-date-03-02-2026.png"
+      "screenshot": "artifacts/orders_lifecycle/screenshots/12-entered-planned-delivery-date-04-02-2026.png"
     },
     {
       "step": "Entered amount of tons: 1",
@@ -78,9 +78,9 @@
       "screenshot": "artifacts/orders_lifecycle/screenshots/14-clicked-create-button.png"
     },
     {
-      "step": "Clicked on top order: 002 - \u00d6ltank 1000l-27.01.26-02503",
+      "step": "Clicked on top order: 002 - \u00d6ltank 1000l-28.01.26-80513",
       "status": "pass",
-      "screenshot": "artifacts/orders_lifecycle/screenshots/15-clicked-on-top-order-002-ltank-1000l-27-01-26-02503.png"
+      "screenshot": "artifacts/orders_lifecycle/screenshots/15-clicked-on-top-order-002-ltank-1000l-28-01-26-80513.png"
     },
     {
       "step": "Clicked Confirm button",
@@ -88,9 +88,9 @@
       "screenshot": "artifacts/orders_lifecycle/screenshots/16-clicked-confirm-button.png"
     },
     {
-      "step": "Clicked on top order again: 002 - \u00d6ltank 1000l-27.01.26-02503",
+      "step": "Clicked on top order again: 002 - \u00d6ltank 1000l-28.01.26-80513",
       "status": "pass",
-      "screenshot": "artifacts/orders_lifecycle/screenshots/17-clicked-on-top-order-again-002-ltank-1000l-27-01-26-02503.png"
+      "screenshot": "artifacts/orders_lifecycle/screenshots/17-clicked-on-top-order-again-002-ltank-1000l-28-01-26-80513.png"
     },
     {
       "step": "Entered delivered date (today) via calendar picker",

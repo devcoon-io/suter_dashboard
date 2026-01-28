@@ -2,7 +2,7 @@
   "test_name": "Marketplace Transfer Test - SET to E4R",
   "test_description": "Verifies that marketplace equipment transfers correctly from SET to E4R tenant.",
   "test_group": "Marketplace",
-  "started_at": "2026-01-26 23:24:01 UTC",
+  "started_at": "2026-01-28 07:04:11 UTC",
   "test_case_number": "05-06",
   "duration": "00 hr 00 min 35 sec",
   "overall_status": "pass",

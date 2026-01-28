@@ -2,9 +2,9 @@
   "test_name": "Pricing Test - G200 (SET)",
   "test_description": "Creates a project in SET with Sales application and Test template, then adds G 200 items with 4 different price classes to verify pricing at different rental period boundaries.",
   "test_group": "Pricelist Validation",
-  "started_at": "2026-01-26 22:28:34 UTC",
+  "started_at": "2026-01-28 06:03:29 UTC",
   "test_case_number": "09-02-01",
-  "duration": "00 hr 01 min 23 sec",
+  "duration": "00 hr 01 min 24 sec",
   "overall_status": "pass",
   "steps": [
     {

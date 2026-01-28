@@ -2,9 +2,9 @@
   "test_name": "Project Timesheet Test - Warm Air (HAG)",
   "test_description": "Creates a new Warm Air project and moves it through lifecycle stages to Active status for timesheet testing.",
   "test_group": "Project Testing",
-  "started_at": "2026-01-27 07:53:34 UTC",
+  "started_at": "2026-01-28 07:19:50 UTC",
   "test_case_number": "10-08",
-  "duration": "00 hr 02 min 18 sec",
+  "duration": "00 hr 01 min 58 sec",
   "overall_status": "pass",
   "steps": [
     {

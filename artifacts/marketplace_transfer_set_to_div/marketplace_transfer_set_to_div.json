@@ -2,7 +2,7 @@
   "test_name": "Marketplace Transfer Test - SET to DIV",
   "test_description": "Verifies that marketplace equipment transfers correctly from SET to DIV tenant.",
   "test_group": "Marketplace",
-  "started_at": "2026-01-26 23:23:26 UTC",
+  "started_at": "2026-01-28 07:03:36 UTC",
   "test_case_number": "05-05",
   "duration": "00 hr 00 min 35 sec",
   "overall_status": "pass",

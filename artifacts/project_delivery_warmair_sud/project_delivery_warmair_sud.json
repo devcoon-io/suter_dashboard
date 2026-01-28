@@ -2,9 +2,9 @@
   "test_name": "Project Delivery Test - Warm Air (SUD)",
   "test_description": "Creates a new Warm Air project and moves it through lifecycle stages to Active status for delivery testing.",
   "test_group": "Project Testing",
-  "started_at": "2026-01-27 07:41:50 UTC",
+  "started_at": "2026-01-28 07:09:44 UTC",
   "test_case_number": "10-03",
-  "duration": "00 hr 02 min 33 sec",
+  "duration": "00 hr 02 min 03 sec",
   "overall_status": "pass",
   "steps": [
     {

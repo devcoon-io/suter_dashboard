@@ -2,9 +2,9 @@
   "test_name": "Project Lifecycle Workflow (HAG)",
   "test_description": "Moves a project through all stages: Offered -> Ordered -> Ready -> Active -> Invoicing",
   "test_group": "Project Lifecycle",
-  "started_at": "2026-01-27 07:30:00 UTC",
+  "started_at": "2026-01-28 06:54:29 UTC",
   "test_case_number": "08-04",
-  "duration": "00 hr 01 min 37 sec",
+  "duration": "00 hr 01 min 27 sec",
   "overall_status": "pass",
   "steps": [
     {

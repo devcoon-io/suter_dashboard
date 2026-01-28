@@ -2,9 +2,9 @@
   "test_name": "Project Delivery Test - Warm Air (HAG)",
   "test_description": "Creates a new Warm Air project and moves it through lifecycle stages to Active status for delivery testing.",
   "test_group": "Project Testing",
-  "started_at": "2026-01-27 07:44:25 UTC",
+  "started_at": "2026-01-28 07:11:48 UTC",
   "test_case_number": "10-04",
-  "duration": "00 hr 02 min 25 sec",
+  "duration": "00 hr 02 min 03 sec",
   "overall_status": "pass",
   "steps": [
     {

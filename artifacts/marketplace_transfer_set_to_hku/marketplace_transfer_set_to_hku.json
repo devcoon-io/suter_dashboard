@@ -2,7 +2,7 @@
   "test_name": "Marketplace Transfer Test - SET to HKU",
   "test_description": "Verifies that marketplace equipment transfers correctly from SET to HKU tenant.",
   "test_group": "Marketplace",
-  "started_at": "2026-01-26 23:22:50 UTC",
+  "started_at": "2026-01-28 07:03:01 UTC",
   "test_case_number": "05-04",
   "duration": "00 hr 00 min 35 sec",
   "overall_status": "pass",
